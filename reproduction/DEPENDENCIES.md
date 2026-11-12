@@ -35,6 +35,10 @@ from the recorded runtime defaults:
 The PIG overrides already enable partial decomposition and the recorded
 subproblem and cut selection settings. The full original default file is kept
 in [settings/topology-default.toml](settings/topology-default.toml).
+Complete overrides for the main SCOTS and SCOPF flow evaluations are available
+in [settings/scots.toml](settings/scots.toml) and
+[settings/scopf.toml](settings/scopf.toml), with
+[usage instructions](settings/README.md).
 `prepare_topology_optimizer.py` exports the pinned source into
 `build/TopologyOptimizer` and replaces only that build copy's default settings.
 It includes the input required by the solver's precompilation workload.
