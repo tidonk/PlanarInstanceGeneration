@@ -1,0 +1,4 @@
+# Preserve the recorded benchmark bytes, including original whitespace.
+pglib/*.m -text -whitespace
+snd/*.xml -text -whitespace
+LICENSES/PGLib-OPF.txt -text -whitespace

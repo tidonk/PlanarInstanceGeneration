@@ -28,11 +28,16 @@ PGLib filenames and hashes, are recorded in `reproduction/input-files.csv`.
 Obtain the data from their owners and observe the respective terms. The download
 script verifies every file and refuses mismatches.
 
+The 1,000 final generated instances are distributed under `instances/`.
+Their [data notices](instances/DATA_NOTICES.md) describe the source terms,
+attribution, and modifications. The catalogue maps each composite to its
+original sources. The software license does not replace these data terms.
+
 ## Separate evaluation ZIP
 
 The optional ZIP created by `check/scripts/package_evaluation.py` includes the
 initialized submodule sources, original benchmark files, generated instances,
 and final numerical records. Data and dependency sources retain their original
-terms. Benchmark inputs and experiment results are excluded from this Git
-repository. The ZIP includes the native executables used in the experiments,
+terms. Original benchmark inputs and recorded solver results are excluded from
+this Git repository. The ZIP includes the native executables used in the experiments,
 but no Gurobi software, license files, or Julia package caches.

@@ -5,8 +5,10 @@ To export the recorded paper results from this checkout, follow
 [RECORDED_DATA.md](RECORDED_DATA.md). The results archive is separate from Git.
 
 Run commands from the repository root after following the installation and
-input-download instructions in the top-level README. All results stay under
-`check/results/`; no input or generated instance belongs in Git.
+input-download instructions in the top-level README. New runs write to
+`check/results/`. The 1,000 final instances from the main experiment are
+included under [instances/](../instances/README.md), with instructions for
+using them with the application runners.
 
 ## Main experiment
 
@@ -134,8 +136,9 @@ statistical confidence intervals. The example does not replace the full study.
 
 The 66 PGLib files can be downloaded and checked against the pinned revision.
 SNDlib's 26 filenames and hashes identify the original XML files even if its
-service is unavailable. The original data and all generated instances are
-excluded from the repository and source archive.
+service is unavailable. The 1,000 final generated instances are included in
+the repository and source archive, with checksums and source attribution.
+Original inputs and recorded solver results are obtained separately.
 
 The two Julia libraries and OGDF are pinned as Git submodules. Initialize them
 with `git submodule update --init --recursive`. The TopologyOptimizer setup

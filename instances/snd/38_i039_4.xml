@@ -1,0 +1,6237 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<network xmlns="http://sndlib.zib.de/network" version="1.0">
+ <networkStructure>
+  <nodes coordinatesType="pixel">
+   <node id="N7">
+    <coordinates>
+     <x>646.0</x>
+     <y>134.0</y>
+    </coordinates>
+   </node>
+   <node id="N8">
+    <coordinates>
+     <x>679.0</x>
+     <y>298.0</y>
+    </coordinates>
+   </node>
+   <node id="N9">
+    <coordinates>
+     <x>670.0</x>
+     <y>416.0</y>
+    </coordinates>
+   </node>
+   <node id="N10">
+    <coordinates>
+     <x>650.0</x>
+     <y>572.0</y>
+    </coordinates>
+   </node>
+   <node id="N12">
+    <coordinates>
+     <x>599.0</x>
+     <y>466.0</y>
+    </coordinates>
+   </node>
+   <node id="right1::Bayreuth">
+    <coordinates>
+     <x>11.59</x>
+     <y>49.93</y>
+    </coordinates>
+   </node>
+   <node id="right1::Berlin">
+    <coordinates>
+     <x>13.39</x>
+     <y>52.52</y>
+    </coordinates>
+   </node>
+   <node id="right1::Braunschweig">
+    <coordinates>
+     <x>10.55</x>
+     <y>52.28</y>
+    </coordinates>
+   </node>
+   <node id="right1::Chemnitz">
+    <coordinates>
+     <x>12.93</x>
+     <y>50.84</y>
+    </coordinates>
+   </node>
+   <node id="right1::Dortmund">
+    <coordinates>
+     <x>7.45</x>
+     <y>51.51</y>
+    </coordinates>
+   </node>
+   <node id="right1::Dresden">
+    <coordinates>
+     <x>13.73</x>
+     <y>51.03</y>
+    </coordinates>
+   </node>
+   <node id="right1::Erfurt">
+    <coordinates>
+     <x>11.04</x>
+     <y>50.98</y>
+    </coordinates>
+   </node>
+   <node id="right1::Fulda">
+    <coordinates>
+     <x>9.69</x>
+     <y>50.56</y>
+    </coordinates>
+   </node>
+   <node id="right1::Giessen">
+    <coordinates>
+     <x>8.67</x>
+     <y>50.57</y>
+    </coordinates>
+   </node>
+   <node id="right1::Kassel">
+    <coordinates>
+     <x>9.51</x>
+     <y>51.32</y>
+    </coordinates>
+   </node>
+   <node id="right1::Leipzig">
+    <coordinates>
+     <x>12.38</x>
+     <y>51.34</y>
+    </coordinates>
+   </node>
+   <node id="right1::Magdeburg">
+    <coordinates>
+     <x>11.64</x>
+     <y>52.14</y>
+    </coordinates>
+   </node>
+   <node id="right1::Muenchen">
+    <coordinates>
+     <x>11.57</x>
+     <y>48.15</y>
+    </coordinates>
+   </node>
+   <node id="right1::Nuernberg">
+    <coordinates>
+     <x>11.03</x>
+     <y>49.57</y>
+    </coordinates>
+   </node>
+   <node id="right1::Regensburg">
+    <coordinates>
+     <x>12.09</x>
+     <y>49.0</y>
+    </coordinates>
+   </node>
+   <node id="right1::Wuerzburg">
+    <coordinates>
+     <x>9.97</x>
+     <y>49.78</y>
+    </coordinates>
+   </node>
+   <node id="right2::Aachen">
+    <coordinates>
+     <x>6.04</x>
+     <y>50.76</y>
+    </coordinates>
+   </node>
+   <node id="right2::Darmstadt">
+    <coordinates>
+     <x>8.65</x>
+     <y>49.89</y>
+    </coordinates>
+   </node>
+   <node id="right2::Kaiserslautern">
+    <coordinates>
+     <x>7.75</x>
+     <y>49.43</y>
+    </coordinates>
+   </node>
+   <node id="right2::Karlsruhe">
+    <coordinates>
+     <x>8.41</x>
+     <y>49.01</y>
+    </coordinates>
+   </node>
+   <node id="right2::Koblenz">
+    <coordinates>
+     <x>7.52</x>
+     <y>50.4</y>
+    </coordinates>
+   </node>
+   <node id="right2::Saarbruecken">
+    <coordinates>
+     <x>7.03</x>
+     <y>49.23</y>
+    </coordinates>
+   </node>
+   <node id="right2::Stuttgart">
+    <coordinates>
+     <x>9.1</x>
+     <y>48.74</y>
+    </coordinates>
+   </node>
+   <node id="right2::Trier">
+    <coordinates>
+     <x>6.68</x>
+     <y>49.75</y>
+    </coordinates>
+   </node>
+   <node id="Amsterdam">
+    <coordinates>
+     <x>4.51</x>
+     <y>52.2</y>
+    </coordinates>
+   </node>
+   <node id="Brussels">
+    <coordinates>
+     <x>4.2</x>
+     <y>50.49</y>
+    </coordinates>
+   </node>
+   <node id="Frankfurt">
+    <coordinates>
+     <x>8.38</x>
+     <y>50.07</y>
+    </coordinates>
+   </node>
+   <node id="Hamburg">
+    <coordinates>
+     <x>10.0</x>
+     <y>53.33</y>
+    </coordinates>
+   </node>
+   <node id="London">
+    <coordinates>
+     <x>-0.07</x>
+     <y>51.3</y>
+    </coordinates>
+   </node>
+   <node id="Paris">
+    <coordinates>
+     <x>2.2</x>
+     <y>48.51</y>
+    </coordinates>
+   </node>
+   <node id="right1::Stuttgart">
+    <coordinates>
+     <x>9.12</x>
+     <y>48.73</y>
+    </coordinates>
+   </node>
+   <node id="right1::Karlsruhe">
+    <coordinates>
+     <x>8.41</x>
+     <y>49.01</y>
+    </coordinates>
+   </node>
+   <node id="right1::Mannheim">
+    <coordinates>
+     <x>8.49</x>
+     <y>49.49</y>
+    </coordinates>
+   </node>
+  </nodes>
+  <links>
+   <link id="L7">
+    <source>N7</source>
+    <target>N8</target>
+    <additionalModules>
+     <addModule>
+      <capacity>1000.0</capacity>
+      <cost>33440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>4000.0</capacity>
+      <cost>73570.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L8">
+    <source>N8</source>
+    <target>N9</target>
+    <additionalModules>
+     <addModule>
+      <capacity>1000.0</capacity>
+      <cost>9500.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>4000.0</capacity>
+      <cost>20910.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L9">
+    <source>N9</source>
+    <target>N10</target>
+    <additionalModules>
+     <addModule>
+      <capacity>1000.0</capacity>
+      <cost>17800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>4000.0</capacity>
+      <cost>39160.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L10">
+    <source>N9</source>
+    <target>N12</target>
+    <additionalModules>
+     <addModule>
+      <capacity>1000.0</capacity>
+      <cost>16300.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>4000.0</capacity>
+      <cost>35870.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L11">
+    <source>N10</source>
+    <target>N12</target>
+    <additionalModules>
+     <addModule>
+      <capacity>1000.0</capacity>
+      <cost>4880.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>4000.0</capacity>
+      <cost>10740.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L9">
+    <source>right1::Kassel</source>
+    <target>right1::Dortmund</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L22">
+    <source>right1::Leipzig</source>
+    <target>right1::Berlin</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L23">
+    <source>right1::Dresden</source>
+    <target>right1::Berlin</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>4150.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L25">
+    <source>right1::Magdeburg</source>
+    <target>right1::Berlin</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L27">
+    <source>right1::Dresden</source>
+    <target>right1::Leipzig</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L28">
+    <source>right1::Erfurt</source>
+    <target>right1::Leipzig</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L29">
+    <source>right1::Magdeburg</source>
+    <target>right1::Leipzig</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L30">
+    <source>right1::Bayreuth</source>
+    <target>right1::Leipzig</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>4150.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L31">
+    <source>right1::Erfurt</source>
+    <target>right1::Dresden</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>4150.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L32">
+    <source>right1::Chemnitz</source>
+    <target>right1::Dresden</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L33">
+    <source>right1::Chemnitz</source>
+    <target>right1::Erfurt</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L34">
+    <source>right1::Kassel</source>
+    <target>right1::Erfurt</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L35">
+    <source>right1::Wuerzburg</source>
+    <target>right1::Erfurt</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L36">
+    <source>right1::Bayreuth</source>
+    <target>right1::Chemnitz</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L41">
+    <source>right1::Braunschweig</source>
+    <target>right1::Magdeburg</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L56">
+    <source>right1::Kassel</source>
+    <target>right1::Braunschweig</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L57">
+    <source>right1::Giessen</source>
+    <target>right1::Kassel</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L58">
+    <source>right1::Fulda</source>
+    <target>right1::Kassel</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L67">
+    <source>right1::Fulda</source>
+    <target>right1::Giessen</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L69">
+    <source>right1::Wuerzburg</source>
+    <target>right1::Fulda</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L82">
+    <source>right1::Nuernberg</source>
+    <target>right1::Muenchen</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L83">
+    <source>right1::Regensburg</source>
+    <target>right1::Muenchen</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L86">
+    <source>right1::Bayreuth</source>
+    <target>right1::Nuernberg</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L87">
+    <source>right1::Wuerzburg</source>
+    <target>right1::Nuernberg</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L88">
+    <source>right1::Regensburg</source>
+    <target>right1::Nuernberg</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_1">
+    <source>N7</source>
+    <target>right1::Bayreuth</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>1862.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_2">
+    <source>N8</source>
+    <target>right1::Chemnitz</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>1862.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_3">
+    <source>N9</source>
+    <target>right1::Erfurt</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>1862.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L11">
+    <source>right2::Trier</source>
+    <target>right2::Aachen</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L16">
+    <source>right2::Kaiserslautern</source>
+    <target>right2::Koblenz</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L17">
+    <source>right2::Trier</source>
+    <target>right2::Koblenz</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L63">
+    <source>right2::Kaiserslautern</source>
+    <target>right2::Darmstadt</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L65">
+    <source>right2::Saarbruecken</source>
+    <target>right2::Kaiserslautern</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L66">
+    <source>right2::Karlsruhe</source>
+    <target>right2::Kaiserslautern</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L68">
+    <source>right2::Saarbruecken</source>
+    <target>right2::Trier</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L70">
+    <source>right2::Karlsruhe</source>
+    <target>right2::Saarbruecken</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3720.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right2::L71">
+    <source>right2::Karlsruhe</source>
+    <target>right2::Stuttgart</target>
+    <additionalModules>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_4">
+    <source>right1::Erfurt</source>
+    <target>right2::Saarbruecken</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>2182.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_5">
+    <source>N9</source>
+    <target>right2::Karlsruhe</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>2182.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_6">
+    <source>N8</source>
+    <target>right2::Kaiserslautern</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>2182.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L1">
+    <source>Amsterdam</source>
+    <target>Brussels</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>3580.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>4580.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>8160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>9160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>12740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>13740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>17320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>18320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>21900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>22900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>26480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>27480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>31060.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>32060.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>35640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>36640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>40220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>41220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>44800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>45800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>49380.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>50380.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>53960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>54960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>58540.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>59540.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>63120.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>64120.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>67700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>68700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>72280.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>73280.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>76860.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>77860.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>81440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>82440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>86020.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>87020.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>90600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>91600.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L3">
+    <source>Amsterdam</source>
+    <target>Hamburg</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>4870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>5870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>10740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>11740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>16610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>17610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>22480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>23480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>28350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>29350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>34220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>35220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>40090.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>41090.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>45960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>46960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>51830.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>52830.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>57700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>58700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>63570.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>64570.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>69440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>70440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>75310.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>76310.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>81180.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>82180.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>87050.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>88050.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>92920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>93920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>98790.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>99790.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>104660.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>105660.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>110530.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>111530.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>116400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>117400.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L4">
+    <source>Amsterdam</source>
+    <target>London</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>4870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>5870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>10740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>11740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>16610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>17610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>22480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>23480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>28350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>29350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>34220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>35220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>40090.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>41090.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>45960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>46960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>51830.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>52830.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>57700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>58700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>63570.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>64570.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>69440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>70440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>75310.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>76310.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>81180.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>82180.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>87050.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>88050.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>92920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>93920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>98790.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>99790.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>104660.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>105660.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>110530.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>111530.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>116400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>117400.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L18">
+    <source>Brussels</source>
+    <target>Frankfurt</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>4440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>5440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>9880.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>10880.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>15320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>16320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>20760.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>21760.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>26200.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>27200.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>31640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>32640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>37080.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>38080.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>42520.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>43520.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>47960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>48960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>53400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>54400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>58840.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>59840.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>64280.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>65280.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>69720.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>70720.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>75160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>76160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>80600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>81600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>86040.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>87040.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>91480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>92480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>96920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>97920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>102360.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>103360.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>107800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>108800.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L19">
+    <source>Brussels</source>
+    <target>Paris</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>6160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>7160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>13320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>14320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>20480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>21480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>27640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>28640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>34800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>35800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>41960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>42960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>49120.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>50120.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>56280.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>57280.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>63440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>64440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>70600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>71600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>77760.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>78760.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>84920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>85920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>92080.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>93080.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>99240.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>100240.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>106400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>107400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>113560.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>114560.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>120720.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>121720.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>127880.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>128880.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>135040.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>136040.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>142200.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>143200.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L25">
+    <source>Frankfurt</source>
+    <target>Hamburg</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>5300.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>6300.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>11600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>12600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>17900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>18900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>24200.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>25200.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>30500.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>31500.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>36800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>37800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>43100.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>44100.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>49400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>50400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>55700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>56700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>62000.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>63000.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>68300.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>69300.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>74600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>75600.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>80900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>81900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>87200.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>88200.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>93500.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>94500.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>99800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>100800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>106100.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>107100.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>112400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>113400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>118700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>119700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>125000.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>126000.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="L28">
+    <source>London</source>
+    <target>Paris</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>4870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>5870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>10740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>11740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>16610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>17610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>22480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>23480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>28350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>29350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>34220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>35220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>40090.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>41090.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>45960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>46960.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>51830.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>52830.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>57700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>58700.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>63570.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>64570.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>69440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>70440.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>75310.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>76310.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>81180.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>82180.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>87050.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>88050.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>92920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>93920.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>98790.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>99790.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>104660.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>105660.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>110530.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>111530.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>116400.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>117400.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_7">
+    <source>right1::Braunschweig</source>
+    <target>Brussels</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>3260.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_8">
+    <source>right1::Kassel</source>
+    <target>Paris</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>3260.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_9">
+    <source>right1::Dortmund</source>
+    <target>London</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>3260.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L20">
+    <source>right1::Karlsruhe</source>
+    <target>right1::Mannheim</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>2290.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>5580.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>6580.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>8870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>9870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>12160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>13160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>15450.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>16450.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>18740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>19740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>22030.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>23030.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>25320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>26320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>28610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>29610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>31900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>32900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>35190.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>36190.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>38480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>39480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>41770.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>42770.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>45060.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>46060.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>48350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>49350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>51640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>52640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>54930.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>55930.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>58220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>59220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>61510.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>62510.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>64800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>65800.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="right1::L21">
+    <source>right1::Karlsruhe</source>
+    <target>right1::Stuttgart</target>
+    <additionalModules>
+     <addModule>
+      <capacity>20.0</capacity>
+      <cost>2290.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>40.0</capacity>
+      <cost>3290.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>60.0</capacity>
+      <cost>5580.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>80.0</capacity>
+      <cost>6580.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>100.0</capacity>
+      <cost>8870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>120.0</capacity>
+      <cost>9870.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>140.0</capacity>
+      <cost>12160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>160.0</capacity>
+      <cost>13160.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>180.0</capacity>
+      <cost>15450.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>200.0</capacity>
+      <cost>16450.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>220.0</capacity>
+      <cost>18740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>240.0</capacity>
+      <cost>19740.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>260.0</capacity>
+      <cost>22030.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>280.0</capacity>
+      <cost>23030.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>300.0</capacity>
+      <cost>25320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>320.0</capacity>
+      <cost>26320.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>340.0</capacity>
+      <cost>28610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>360.0</capacity>
+      <cost>29610.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>380.0</capacity>
+      <cost>31900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>400.0</capacity>
+      <cost>32900.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>420.0</capacity>
+      <cost>35190.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>440.0</capacity>
+      <cost>36190.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>460.0</capacity>
+      <cost>38480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>480.0</capacity>
+      <cost>39480.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>500.0</capacity>
+      <cost>41770.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>520.0</capacity>
+      <cost>42770.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>540.0</capacity>
+      <cost>45060.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>560.0</capacity>
+      <cost>46060.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>580.0</capacity>
+      <cost>48350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>600.0</capacity>
+      <cost>49350.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>620.0</capacity>
+      <cost>51640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>640.0</capacity>
+      <cost>52640.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>660.0</capacity>
+      <cost>54930.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>680.0</capacity>
+      <cost>55930.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>700.0</capacity>
+      <cost>58220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>720.0</capacity>
+      <cost>59220.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>740.0</capacity>
+      <cost>61510.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>760.0</capacity>
+      <cost>62510.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>780.0</capacity>
+      <cost>64800.0</cost>
+     </addModule>
+     <addModule>
+      <capacity>800.0</capacity>
+      <cost>65800.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_10">
+    <source>right1::Wuerzburg</source>
+    <target>right1::Karlsruhe</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>3300.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_11">
+    <source>right1::Nuernberg</source>
+    <target>right1::Stuttgart</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>3300.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+   <link id="coupling_12">
+    <source>right1::Regensburg</source>
+    <target>right1::Mannheim</target>
+    <routingCost>0.0</routingCost>
+    <setupCost>0.0</setupCost>
+    <additionalModules>
+     <addModule>
+      <capacity>3300.0</capacity>
+      <cost>0.0</cost>
+     </addModule>
+    </additionalModules>
+   </link>
+  </links>
+ </networkStructure>
+ <demands>
+  <demand id="D13">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D14">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="D15">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D16">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D63">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D64">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="D65">
+   <source>N7</source>
+   <target>N9</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D66">
+   <source>N9</source>
+   <target>N7</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D111">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D112">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D113">
+   <source>N7</source>
+   <target>N9</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D114">
+   <source>N9</source>
+   <target>N7</target>
+   <demandValue>13.0</demandValue>
+  </demand>
+  <demand id="D157">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D158">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="D159">
+   <source>N7</source>
+   <target>N9</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D160">
+   <source>N9</source>
+   <target>N7</target>
+   <demandValue>13.0</demandValue>
+  </demand>
+  <demand id="D201">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>9.0</demandValue>
+  </demand>
+  <demand id="D202">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D203">
+   <source>N7</source>
+   <target>N9</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="D204">
+   <source>N9</source>
+   <target>N7</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="D205">
+   <source>N7</source>
+   <target>N10</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D206">
+   <source>N10</source>
+   <target>N7</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="D243">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D244">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D245">
+   <source>N7</source>
+   <target>N9</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="D246">
+   <source>N9</source>
+   <target>N7</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D247">
+   <source>N7</source>
+   <target>N10</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D248">
+   <source>N10</source>
+   <target>N7</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="D249">
+   <source>N7</source>
+   <target>N12</target>
+   <demandValue>9.0</demandValue>
+  </demand>
+  <demand id="D250">
+   <source>N12</source>
+   <target>N7</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D283">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="D284">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D285">
+   <source>N7</source>
+   <target>N9</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="D286">
+   <source>N9</source>
+   <target>N7</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D287">
+   <source>N7</source>
+   <target>N10</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D288">
+   <source>N10</source>
+   <target>N7</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D289">
+   <source>N7</source>
+   <target>N10</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="D290">
+   <source>N12</source>
+   <target>N7</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D291">
+   <source>N7</source>
+   <target>N12</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D292">
+   <source>N12</source>
+   <target>N7</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D323">
+   <source>N8</source>
+   <target>N9</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D324">
+   <source>N9</source>
+   <target>N8</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="D325">
+   <source>N8</source>
+   <target>N10</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D326">
+   <source>N10</source>
+   <target>N8</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="D327">
+   <source>N8</source>
+   <target>N10</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D328">
+   <source>N12</source>
+   <target>N8</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="D329">
+   <source>N8</source>
+   <target>N12</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D330">
+   <source>N12</source>
+   <target>N8</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D331">
+   <source>N8</source>
+   <target>N12</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D332">
+   <source>N12</source>
+   <target>N8</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D333">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="D334">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="D335">
+   <source>N8</source>
+   <target>N12</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D336">
+   <source>N12</source>
+   <target>N8</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D337">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D338">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D339">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="D340">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D341">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D342">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>13.0</demandValue>
+  </demand>
+  <demand id="D343">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>13.0</demandValue>
+  </demand>
+  <demand id="D344">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="D345">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D346">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D347">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D348">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D349">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D350">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D351">
+   <source>N8</source>
+   <target>N10</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D352">
+   <source>N10</source>
+   <target>N8</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="D353">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D354">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D355">
+   <source>N8</source>
+   <target>N10</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D356">
+   <source>N10</source>
+   <target>N8</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D357">
+   <source>N8</source>
+   <target>N10</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D358">
+   <source>N10</source>
+   <target>N8</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D359">
+   <source>N8</source>
+   <target>N7</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D360">
+   <source>N7</source>
+   <target>N8</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D361">
+   <source>N9</source>
+   <target>N10</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D362">
+   <source>N10</source>
+   <target>N9</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D363">
+   <source>N9</source>
+   <target>N10</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D364">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="D365">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D366">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>13.0</demandValue>
+  </demand>
+  <demand id="D367">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="D368">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="D369">
+   <source>N9</source>
+   <target>N7</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D370">
+   <source>N7</source>
+   <target>N9</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="D371">
+   <source>N9</source>
+   <target>N10</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D372">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D373">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="D374">
+   <source>N10</source>
+   <target>N9</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D375">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D376">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="D377">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D378">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D379">
+   <source>N9</source>
+   <target>N10</target>
+   <demandValue>9.0</demandValue>
+  </demand>
+  <demand id="D380">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D381">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D382">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D383">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D384">
+   <source>N10</source>
+   <target>N9</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="D385">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D386">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>13.0</demandValue>
+  </demand>
+  <demand id="D387">
+   <source>N9</source>
+   <target>N10</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D388">
+   <source>N10</source>
+   <target>N9</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D389">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D390">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D391">
+   <source>N9</source>
+   <target>N10</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="D392">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="D393">
+   <source>N9</source>
+   <target>N10</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="D394">
+   <source>N10</source>
+   <target>N9</target>
+   <demandValue>9.0</demandValue>
+  </demand>
+  <demand id="D395">
+   <source>N9</source>
+   <target>N12</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="D396">
+   <source>N12</source>
+   <target>N9</target>
+   <demandValue>9.0</demandValue>
+  </demand>
+  <demand id="D399">
+   <source>N10</source>
+   <target>N12</target>
+   <demandValue>13.0</demandValue>
+  </demand>
+  <demand id="D400">
+   <source>N12</source>
+   <target>N10</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="D401">
+   <source>N10</source>
+   <target>N12</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D402">
+   <source>N12</source>
+   <target>N10</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="D403">
+   <source>N10</source>
+   <target>N7</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="D404">
+   <source>N7</source>
+   <target>N10</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="D409">
+   <source>N10</source>
+   <target>N12</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D410">
+   <source>N12</source>
+   <target>N10</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="D412">
+   <source>N12</source>
+   <target>N10</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Berlin">
+   <source>right1::Dortmund</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Leipzig">
+   <source>right1::Dortmund</source>
+   <target>right1::Leipzig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Dresden">
+   <source>right1::Dortmund</source>
+   <target>right1::Dresden</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Erfurt">
+   <source>right1::Dortmund</source>
+   <target>right1::Erfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Chemnitz">
+   <source>right1::Dortmund</source>
+   <target>right1::Chemnitz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Schwerin">
+   <source>right1::Dortmund</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Magdeburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Hamburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Kiel">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Frankfurt">
+   <source>right1::Dortmund</source>
+   <target>right1::Giessen</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Stuttgart">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Muenchen">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Augsburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Nuernberg">
+   <source>right1::Dortmund</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Essen_Wuerzburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Berlin">
+   <source>right1::Dortmund</source>
+   <target>right1::Berlin</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Leipzig">
+   <source>right1::Dortmund</source>
+   <target>right1::Leipzig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Dresden">
+   <source>right1::Dortmund</source>
+   <target>right1::Dresden</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Erfurt">
+   <source>right1::Dortmund</source>
+   <target>right1::Erfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Schwerin">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Magdeburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Greifswald">
+   <source>right1::Dortmund</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Hamburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>15.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Kiel">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Braunschweig">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Kassel">
+   <source>right1::Dortmund</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Giessen">
+   <source>right1::Dortmund</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Muenchen__part_1">
+   <source>right1::Dortmund</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Muenchen__part_2">
+   <source>right1::Fulda</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Augsburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Nuernberg">
+   <source>right1::Dortmund</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Wuerzburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Duesseldorf_Regensburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Regensburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Berlin">
+   <source>right1::Braunschweig</source>
+   <target>right1::Berlin</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Leipzig">
+   <source>right1::Dortmund</source>
+   <target>right1::Leipzig</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Dresden">
+   <source>right1::Dortmund</source>
+   <target>right1::Dresden</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Erfurt">
+   <source>right1::Dortmund</source>
+   <target>right1::Erfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Chemnitz">
+   <source>right1::Dortmund</source>
+   <target>right1::Chemnitz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Magdeburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Kassel">
+   <source>right1::Dortmund</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Muenchen">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Augsburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Nuernberg">
+   <source>right1::Fulda</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Bayreuth">
+   <source>right1::Fulda</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Wuerzburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koeln_Regensburg">
+   <source>right1::Fulda</source>
+   <target>right1::Regensburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Berlin">
+   <source>right1::Dortmund</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Leipzig">
+   <source>right1::Dortmund</source>
+   <target>right1::Leipzig</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Dresden">
+   <source>right1::Dortmund</source>
+   <target>right1::Dresden</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Erfurt">
+   <source>right1::Dortmund</source>
+   <target>right1::Erfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Chemnitz">
+   <source>right1::Dortmund</source>
+   <target>right1::Chemnitz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Schwerin__part_1">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Schwerin__part_2">
+   <source>right1::Dortmund</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Magdeburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Greifswald">
+   <source>right1::Dortmund</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Hamburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Kiel">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Flensburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Braunschweig">
+   <source>right1::Dortmund</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Kassel">
+   <source>right1::Dortmund</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Mannheim">
+   <source>right1::Dortmund</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Giessen">
+   <source>right1::Dortmund</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Fulda">
+   <source>right1::Dortmund</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Stuttgart">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Ulm">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Muenchen">
+   <source>right1::Dortmund</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Augsburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Nuernberg">
+   <source>right1::Dortmund</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dortmund_Wuerzburg">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Aachen_Dresden">
+   <source>right1::Dortmund</source>
+   <target>right1::Dresden</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Aachen_Erfurt">
+   <source>right1::Dortmund</source>
+   <target>right1::Erfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Aachen_Nuernberg">
+   <source>right1::Fulda</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Muenster_Berlin">
+   <source>right1::Braunschweig</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Muenster_Kassel">
+   <source>right1::Dortmund</source>
+   <target>right1::Kassel</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Muenster_Fulda">
+   <source>right1::Dortmund</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Muenster_Konstanz">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Muenster_Nuernberg">
+   <source>right1::Dortmund</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koblenz_Berlin">
+   <source>right1::Braunschweig</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koblenz_Dresden">
+   <source>right1::Dortmund</source>
+   <target>right1::Dresden</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koblenz_Kassel">
+   <source>right1::Dortmund</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Koblenz_Wuerzburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Siegen_Berlin">
+   <source>right1::Braunschweig</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Siegen_Fulda">
+   <source>right1::Giessen</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Siegen_Nuernberg">
+   <source>right1::Giessen</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Wesel_Berlin">
+   <source>right1::Dortmund</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Wesel_Fulda">
+   <source>right1::Dortmund</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Leipzig">
+   <source>right1::Berlin</source>
+   <target>right1::Leipzig</target>
+   <demandValue>20.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Dresden">
+   <source>right1::Berlin</source>
+   <target>right1::Dresden</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Erfurt">
+   <source>right1::Berlin</source>
+   <target>right1::Erfurt</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Chemnitz">
+   <source>right1::Berlin</source>
+   <target>right1::Chemnitz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Magdeburg">
+   <source>right1::Berlin</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Bielefeld">
+   <source>right1::Berlin</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Braunschweig">
+   <source>right1::Berlin</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Kassel">
+   <source>right1::Berlin</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Frankfurt">
+   <source>right1::Berlin</source>
+   <target>right1::Giessen</target>
+   <demandValue>16.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Darmstadt">
+   <source>right1::Berlin</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Mannheim">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Kaiserslautern">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Giessen">
+   <source>right1::Berlin</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Trier">
+   <source>right1::Berlin</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Fulda">
+   <source>right1::Berlin</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Saarbruecken">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Stuttgart">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Karlsruhe">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Ulm">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Konstanz">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Freiburg">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Muenchen">
+   <source>right1::Berlin</source>
+   <target>right1::Muenchen</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Augsburg">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Passau">
+   <source>right1::Berlin</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Nuernberg">
+   <source>right1::Berlin</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Bayreuth">
+   <source>right1::Berlin</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Berlin_Wuerzburg">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Dresden">
+   <source>right1::Leipzig</source>
+   <target>right1::Dresden</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Erfurt">
+   <source>right1::Leipzig</source>
+   <target>right1::Erfurt</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Chemnitz">
+   <source>right1::Leipzig</source>
+   <target>right1::Chemnitz</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Schwerin">
+   <source>right1::Leipzig</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Magdeburg">
+   <source>right1::Leipzig</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Greifswald">
+   <source>right1::Leipzig</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Hamburg">
+   <source>right1::Leipzig</source>
+   <target>right1::Berlin</target>
+   <demandValue>17.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Hannover">
+   <source>right1::Leipzig</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Bielefeld">
+   <source>right1::Leipzig</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Braunschweig">
+   <source>right1::Leipzig</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Frankfurt">
+   <source>right1::Leipzig</source>
+   <target>right1::Giessen</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Darmstadt">
+   <source>right1::Leipzig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Mannheim">
+   <source>right1::Leipzig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Stuttgart">
+   <source>right1::Leipzig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Karlsruhe">
+   <source>right1::Leipzig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Ulm">
+   <source>right1::Leipzig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Muenchen">
+   <source>right1::Leipzig</source>
+   <target>right1::Muenchen</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Augsburg">
+   <source>right1::Leipzig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Nuernberg">
+   <source>right1::Leipzig</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>9.0</demandValue>
+  </demand>
+  <demand id="right1::Leipzig_Wuerzburg">
+   <source>right1::Leipzig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Erfurt">
+   <source>right1::Dresden</source>
+   <target>right1::Erfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Chemnitz">
+   <source>right1::Dresden</source>
+   <target>right1::Chemnitz</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Schwerin">
+   <source>right1::Dresden</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Magdeburg">
+   <source>right1::Dresden</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Greifswald">
+   <source>right1::Dresden</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Hamburg">
+   <source>right1::Dresden</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Bremen">
+   <source>right1::Dresden</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Kiel">
+   <source>right1::Dresden</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Norden">
+   <source>right1::Dresden</source>
+   <target>right1::Dortmund</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Hannover">
+   <source>right1::Dresden</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Bielefeld">
+   <source>right1::Dresden</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Braunschweig">
+   <source>right1::Dresden</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Kassel">
+   <source>right1::Dresden</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Frankfurt">
+   <source>right1::Dresden</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Darmstadt">
+   <source>right1::Dresden</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Mannheim">
+   <source>right1::Dresden</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Trier">
+   <source>right1::Dresden</source>
+   <target>right1::Dortmund</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Stuttgart">
+   <source>right1::Dresden</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Karlsruhe">
+   <source>right1::Dresden</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Ulm">
+   <source>right1::Dresden</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Konstanz">
+   <source>right1::Dresden</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Freiburg">
+   <source>right1::Dresden</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Muenchen">
+   <source>right1::Dresden</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Augsburg">
+   <source>right1::Dresden</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Nuernberg">
+   <source>right1::Dresden</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Bayreuth">
+   <source>right1::Dresden</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Wuerzburg">
+   <source>right1::Dresden</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Dresden_Regensburg">
+   <source>right1::Dresden</source>
+   <target>right1::Regensburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Chemnitz">
+   <source>right1::Erfurt</source>
+   <target>right1::Chemnitz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Schwerin">
+   <source>right1::Erfurt</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Magdeburg">
+   <source>right1::Erfurt</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Hamburg">
+   <source>right1::Erfurt</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Bremen">
+   <source>right1::Erfurt</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Kiel">
+   <source>right1::Erfurt</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Hannover">
+   <source>right1::Erfurt</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Bielefeld">
+   <source>right1::Erfurt</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Braunschweig">
+   <source>right1::Erfurt</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Kassel">
+   <source>right1::Erfurt</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Frankfurt">
+   <source>right1::Erfurt</source>
+   <target>right1::Giessen</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Darmstadt">
+   <source>right1::Erfurt</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Mannheim">
+   <source>right1::Erfurt</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Giessen">
+   <source>right1::Erfurt</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Fulda">
+   <source>right1::Erfurt</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Stuttgart">
+   <source>right1::Erfurt</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Karlsruhe">
+   <source>right1::Erfurt</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Muenchen">
+   <source>right1::Erfurt</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Augsburg">
+   <source>right1::Erfurt</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Nuernberg">
+   <source>right1::Erfurt</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Bayreuth">
+   <source>right1::Erfurt</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Erfurt_Wuerzburg">
+   <source>right1::Erfurt</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Schwerin">
+   <source>right1::Chemnitz</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Magdeburg">
+   <source>right1::Chemnitz</source>
+   <target>right1::Magdeburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Hamburg">
+   <source>right1::Chemnitz</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Hannover">
+   <source>right1::Chemnitz</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Bielefeld">
+   <source>right1::Chemnitz</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Braunschweig">
+   <source>right1::Chemnitz</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Frankfurt">
+   <source>right1::Chemnitz</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Mannheim">
+   <source>right1::Chemnitz</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Giessen">
+   <source>right1::Chemnitz</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Stuttgart">
+   <source>right1::Chemnitz</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Karlsruhe">
+   <source>right1::Chemnitz</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Muenchen">
+   <source>right1::Chemnitz</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Augsburg">
+   <source>right1::Chemnitz</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Nuernberg">
+   <source>right1::Chemnitz</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Bayreuth">
+   <source>right1::Chemnitz</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Chemnitz_Wuerzburg">
+   <source>right1::Chemnitz</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Schwerin_Frankfurt">
+   <source>right1::Magdeburg</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Schwerin_Mannheim">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Schwerin_Stuttgart">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Schwerin_Karlsruhe">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Schwerin_Muenchen">
+   <source>right1::Berlin</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Schwerin_Augsburg">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Schwerin_Nuernberg">
+   <source>right1::Berlin</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Schwerin_Wuerzburg">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Greifswald">
+   <source>right1::Magdeburg</source>
+   <target>right1::Berlin</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Bremen">
+   <source>right1::Magdeburg</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Hannover">
+   <source>right1::Magdeburg</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Bielefeld">
+   <source>right1::Magdeburg</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Braunschweig">
+   <source>right1::Magdeburg</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Frankfurt">
+   <source>right1::Magdeburg</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Mannheim__part_1">
+   <source>right1::Magdeburg</source>
+   <target>right1::Giessen</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Mannheim__part_2">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Stuttgart">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Karlsruhe">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Muenchen">
+   <source>right1::Magdeburg</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Augsburg">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Nuernberg">
+   <source>right1::Magdeburg</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Bayreuth">
+   <source>right1::Magdeburg</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Magdeburg_Wuerzburg">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Greifswald_Bielefeld">
+   <source>right1::Berlin</source>
+   <target>right1::Braunschweig</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Greifswald_Frankfurt">
+   <source>right1::Berlin</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Greifswald_Karlsruhe">
+   <source>right1::Berlin</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Kassel">
+   <source>right1::Braunschweig</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Frankfurt">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>11.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Darmstadt">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Mannheim">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Giessen">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Fulda">
+   <source>right1::Braunschweig</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Stuttgart">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Ulm">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Muenchen">
+   <source>right1::Magdeburg</source>
+   <target>right1::Muenchen</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Augsburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Nuernberg">
+   <source>right1::Berlin</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Wuerzburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hamburg_Regensburg">
+   <source>right1::Berlin</source>
+   <target>right1::Regensburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bremen_Kassel">
+   <source>right1::Braunschweig</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bremen_Giessen">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bremen_Stuttgart">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bremen_Muenchen">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bremen_Augsburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bremen_Nuernberg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bremen_Wuerzburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Kassel">
+   <source>right1::Braunschweig</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Frankfurt">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Darmstadt">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Mannheim">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Stuttgart">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Karlsruhe">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Muenchen">
+   <source>right1::Berlin</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Augsburg">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Nuernberg">
+   <source>right1::Magdeburg</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Bayreuth">
+   <source>right1::Berlin</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kiel_Wuerzburg">
+   <source>right1::Magdeburg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Oldenburg_Muenchen">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Flensburg_Frankfurt">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right1::Bremerhaven_Frankfurt">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Norden_Muenchen">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Norden_Passau">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Kassel">
+   <source>right1::Braunschweig</source>
+   <target>right1::Kassel</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Frankfurt">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Fulda">
+   <source>right1::Braunschweig</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Stuttgart">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Ulm">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Konstanz">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Muenchen">
+   <source>right1::Braunschweig</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Augsburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Nuernberg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::Hannover_Wuerzburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bielefeld_Kassel">
+   <source>right1::Braunschweig</source>
+   <target>right1::Kassel</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Bielefeld_Fulda">
+   <source>right1::Giessen</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bielefeld_Muenchen">
+   <source>right1::Giessen</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bielefeld_Augsburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bielefeld_Nuernberg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bielefeld_Bayreuth">
+   <source>right1::Braunschweig</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Bielefeld_Wuerzburg">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Braunschweig_Kassel">
+   <source>right1::Braunschweig</source>
+   <target>right1::Kassel</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Braunschweig_Frankfurt">
+   <source>right1::Braunschweig</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Braunschweig_Stuttgart">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Braunschweig_Muenchen">
+   <source>right1::Braunschweig</source>
+   <target>right1::Muenchen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Osnabrueck_Frankfurt">
+   <source>right1::Dortmund</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Osnabrueck_Stuttgart">
+   <source>right1::Braunschweig</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Osnabrueck_Muenchen">
+   <source>right1::Dortmund</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Frankfurt">
+   <source>right1::Kassel</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Darmstadt">
+   <source>right1::Kassel</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Mannheim">
+   <source>right1::Kassel</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Giessen">
+   <source>right1::Kassel</source>
+   <target>right1::Giessen</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Fulda">
+   <source>right1::Kassel</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Stuttgart">
+   <source>right1::Kassel</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Karlsruhe">
+   <source>right1::Kassel</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Muenchen">
+   <source>right1::Kassel</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Kassel_Nuernberg">
+   <source>right1::Kassel</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Stuttgart">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>19.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Ulm">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Konstanz">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Muenchen">
+   <source>right1::Fulda</source>
+   <target>right1::Muenchen</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Augsburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Kempten">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Passau">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Nuernberg">
+   <source>right1::Fulda</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>23.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Bayreuth">
+   <source>right1::Fulda</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Wuerzburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Frankfurt_Regensburg">
+   <source>right1::Fulda</source>
+   <target>right1::Regensburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Darmstadt_Muenchen">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Darmstadt_Augsburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Darmstadt_Nuernberg">
+   <source>right1::Fulda</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Darmstadt_Wuerzburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Mannheim_Nuernberg">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Mannheim_Bayreuth">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Giessen_Fulda">
+   <source>right1::Giessen</source>
+   <target>right1::Fulda</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Giessen_Stuttgart">
+   <source>right1::Giessen</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Giessen_Karlsruhe">
+   <source>right1::Giessen</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Giessen_Muenchen">
+   <source>right1::Giessen</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Giessen_Nuernberg">
+   <source>right1::Giessen</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Giessen_Wuerzburg">
+   <source>right1::Giessen</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Trier_Muenchen">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Fulda_Stuttgart">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Fulda_Karlsruhe">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Fulda_Muenchen">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Fulda_Nuernberg">
+   <source>right1::Fulda</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Fulda_Bayreuth">
+   <source>right1::Fulda</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Fulda_Wuerzburg">
+   <source>right1::Fulda</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Saarbruecken_Nuernberg">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Stuttgart_Nuernberg">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>35.0</demandValue>
+  </demand>
+  <demand id="right1::Stuttgart_Bayreuth">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Stuttgart_Regensburg">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Regensburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Karlsruhe_Nuernberg">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Karlsruhe_Bayreuth">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Ulm_Nuernberg">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Konstanz_Bayreuth">
+   <source>right1::Wuerzburg</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Muenchen_Nuernberg">
+   <source>right1::Muenchen</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>32.0</demandValue>
+  </demand>
+  <demand id="right1::Muenchen_Bayreuth">
+   <source>right1::Muenchen</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Muenchen_Regensburg">
+   <source>right1::Muenchen</source>
+   <target>right1::Regensburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Augsburg_Nuernberg">
+   <source>right1::Muenchen</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Augsburg_Bayreuth">
+   <source>right1::Muenchen</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Passau_Nuernberg">
+   <source>right1::Muenchen</source>
+   <target>right1::Nuernberg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Passau_Bayreuth">
+   <source>right1::Muenchen</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::Nuernberg_Bayreuth">
+   <source>right1::Nuernberg</source>
+   <target>right1::Bayreuth</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right1::Nuernberg_Wuerzburg">
+   <source>right1::Nuernberg</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="right1::Nuernberg_Regensburg">
+   <source>right1::Nuernberg</source>
+   <target>right1::Regensburg</target>
+   <demandValue>9.0</demandValue>
+  </demand>
+  <demand id="right1::Bayreuth_Wuerzburg">
+   <source>right1::Bayreuth</source>
+   <target>right1::Wuerzburg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right1::Bayreuth_Regensburg">
+   <source>right1::Bayreuth</source>
+   <target>right1::Regensburg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right2::Essen_Saarbruecken">
+   <source>right2::Aachen</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Essen_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Duesseldorf_Trier">
+   <source>right2::Aachen</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Duesseldorf_Saarbruecken">
+   <source>right2::Aachen</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Duesseldorf_Stuttgart">
+   <source>right2::Koblenz</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right2::Duesseldorf_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Duesseldorf_Ulm">
+   <source>right2::Koblenz</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Duesseldorf_Freiburg">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Kaiserslautern">
+   <source>right2::Koblenz</source>
+   <target>right2::Kaiserslautern</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Trier">
+   <source>right2::Aachen</source>
+   <target>right2::Trier</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Saarbruecken">
+   <source>right2::Koblenz</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Stuttgart">
+   <source>right2::Koblenz</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Ulm">
+   <source>right2::Koblenz</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Konstanz">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Freiburg">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koeln_Kempten">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Dortmund_Saarbruecken">
+   <source>right2::Koblenz</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Dortmund_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Dortmund_Freiburg">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Koblenz">
+   <source>right2::Aachen</source>
+   <target>right2::Koblenz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Frankfurt">
+   <source>right2::Aachen</source>
+   <target>right2::Koblenz</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Kaiserslautern">
+   <source>right2::Aachen</source>
+   <target>right2::Kaiserslautern</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Trier">
+   <source>right2::Aachen</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Fulda">
+   <source>right2::Aachen</source>
+   <target>right2::Koblenz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Saarbruecken">
+   <source>right2::Aachen</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Konstanz">
+   <source>right2::Aachen</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Freiburg">
+   <source>right2::Aachen</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right2::Aachen_Nuernberg">
+   <source>right2::Aachen</source>
+   <target>right2::Koblenz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koblenz_Kaiserslautern">
+   <source>right2::Koblenz</source>
+   <target>right2::Kaiserslautern</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koblenz_Trier">
+   <source>right2::Koblenz</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koblenz_Saarbruecken">
+   <source>right2::Koblenz</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Koblenz_Konstanz">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Siegen_Saarbruecken">
+   <source>right2::Koblenz</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Siegen_Konstanz">
+   <source>right2::Koblenz</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Wesel_Saarbruecken">
+   <source>right2::Aachen</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Wesel_Konstanz">
+   <source>right2::Aachen</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Berlin_Mannheim">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Berlin_Kaiserslautern">
+   <source>right2::Stuttgart</source>
+   <target>right2::Kaiserslautern</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Berlin_Trier">
+   <source>right2::Koblenz</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Berlin_Saarbruecken">
+   <source>right2::Stuttgart</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Berlin_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Berlin_Freiburg">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Leipzig_Mannheim">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Leipzig_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Dresden_Mannheim">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Dresden_Trier">
+   <source>right2::Koblenz</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Dresden_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Dresden_Freiburg">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Erfurt_Mannheim">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Erfurt_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Chemnitz_Mannheim">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Chemnitz_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Schwerin_Mannheim">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Schwerin_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Magdeburg_Mannheim">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="right2::Magdeburg_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Greifswald_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Hamburg_Saarbruecken">
+   <source>right2::Koblenz</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Hamburg_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Hamburg_Freiburg">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Bremen_Trier">
+   <source>right2::Aachen</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Bremen_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Kiel_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Oldenburg_Frankfurt">
+   <source>right2::Aachen</source>
+   <target>right2::Koblenz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Oldenburg_Stuttgart">
+   <source>right2::Aachen</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Norden_Saarbruecken">
+   <source>right2::Aachen</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Norden_Konstanz">
+   <source>right2::Aachen</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Hannover_Mannheim">
+   <source>right2::Koblenz</source>
+   <target>right2::Darmstadt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Hannover_Trier">
+   <source>right2::Koblenz</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Hannover_Saarbruecken">
+   <source>right2::Koblenz</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Hannover_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Hannover_Freiburg">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Bielefeld_Saarbruecken">
+   <source>right2::Koblenz</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Bielefeld_Stuttgart">
+   <source>right2::Koblenz</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Bielefeld_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Bielefeld_Ulm">
+   <source>right2::Koblenz</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Braunschweig_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Kassel_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Frankfurt_Kaiserslautern">
+   <source>right2::Darmstadt</source>
+   <target>right2::Kaiserslautern</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Frankfurt_Trier">
+   <source>right2::Koblenz</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Frankfurt_Saarbruecken">
+   <source>right2::Darmstadt</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right2::Frankfurt_Karlsruhe">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="right2::Frankfurt_Freiburg">
+   <source>right2::Koblenz</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Darmstadt_Kaiserslautern">
+   <source>right2::Darmstadt</source>
+   <target>right2::Kaiserslautern</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Darmstadt_Trier">
+   <source>right2::Darmstadt</source>
+   <target>right2::Trier</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right2::Darmstadt_Saarbruecken">
+   <source>right2::Darmstadt</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Darmstadt_Stuttgart">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Darmstadt_Ulm">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Kaiserslautern">
+   <source>right2::Darmstadt</source>
+   <target>right2::Kaiserslautern</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Trier">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Saarbruecken">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Stuttgart">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>5.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Ulm">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Konstanz">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Muenchen">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Augsburg">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Kempten">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Nuernberg">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Bayreuth">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Mannheim_Wuerzburg">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Kaiserslautern_Trier">
+   <source>right2::Kaiserslautern</source>
+   <target>right2::Trier</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Kaiserslautern_Saarbruecken">
+   <source>right2::Kaiserslautern</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Kaiserslautern_Stuttgart">
+   <source>right2::Kaiserslautern</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Kaiserslautern_Karlsruhe">
+   <source>right2::Kaiserslautern</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="right2::Kaiserslautern_Muenchen">
+   <source>right2::Kaiserslautern</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Giessen_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Trier_Saarbruecken">
+   <source>right2::Trier</source>
+   <target>right2::Saarbruecken</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Trier_Stuttgart">
+   <source>right2::Trier</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Trier_Karlsruhe">
+   <source>right2::Trier</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Trier_Muenchen">
+   <source>right2::Trier</source>
+   <target>right2::Koblenz</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Fulda_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Saarbruecken_Stuttgart">
+   <source>right2::Saarbruecken</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Saarbruecken_Karlsruhe">
+   <source>right2::Saarbruecken</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Saarbruecken_Freiburg">
+   <source>right2::Saarbruecken</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Saarbruecken_Muenchen">
+   <source>right2::Saarbruecken</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Saarbruecken_Augsburg">
+   <source>right2::Saarbruecken</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Saarbruecken_Nuernberg">
+   <source>right2::Saarbruecken</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Stuttgart_Karlsruhe">
+   <source>right2::Stuttgart</source>
+   <target>right2::Karlsruhe</target>
+   <demandValue>35.0</demandValue>
+  </demand>
+  <demand id="right2::Karlsruhe_Ulm">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Karlsruhe_Konstanz">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Karlsruhe_Muenchen">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right2::Karlsruhe_Augsburg">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Karlsruhe_Kempten">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Karlsruhe_Nuernberg">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Karlsruhe_Bayreuth">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right2::Karlsruhe_Wuerzburg">
+   <source>right2::Karlsruhe</source>
+   <target>right2::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="AmsterdamAthens">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="AmsterdamBarcelona">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="AmsterdamBelgrade">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="AmsterdamBerlin">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>16.0</demandValue>
+  </demand>
+  <demand id="AmsterdamBordeaux">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="AmsterdamBrussels">
+   <source>Amsterdam</source>
+   <target>Brussels</target>
+   <demandValue>16.0</demandValue>
+  </demand>
+  <demand id="AmsterdamBudapest">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="AmsterdamCopenhagen">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="AmsterdamFrankfurt">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>20.0</demandValue>
+  </demand>
+  <demand id="AmsterdamHamburg">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>28.0</demandValue>
+  </demand>
+  <demand id="AmsterdamLondon">
+   <source>Amsterdam</source>
+   <target>London</target>
+   <demandValue>38.0</demandValue>
+  </demand>
+  <demand id="AmsterdamLyon">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="AmsterdamMadrid">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="AmsterdamMilan">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>16.0</demandValue>
+  </demand>
+  <demand id="AmsterdamMunich">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="AmsterdamOslo">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="AmsterdamParis">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="AmsterdamPrague">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="AmsterdamRome">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="AmsterdamStockholm">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="AmsterdamStrasbourg__part_1">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>7.0</demandValue>
+  </demand>
+  <demand id="AmsterdamStrasbourg__part_2">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="AmsterdamVienna">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="AmsterdamWarsaw">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>18.0</demandValue>
+  </demand>
+  <demand id="AmsterdamZagreb">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="AmsterdamZurich">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="AthensBrussels">
+   <source>Frankfurt</source>
+   <target>Brussels</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="AthensDublin">
+   <source>Paris</source>
+   <target>London</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="AthensGlasgow">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="AthensLondon">
+   <source>Paris</source>
+   <target>London</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BarcelonaBrussels">
+   <source>Paris</source>
+   <target>Brussels</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BarcelonaDublin">
+   <source>Paris</source>
+   <target>London</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BarcelonaGlasgow">
+   <source>Paris</source>
+   <target>Amsterdam</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BarcelonaHamburg">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BarcelonaLondon">
+   <source>Paris</source>
+   <target>London</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="BelgradeBrussels">
+   <source>Frankfurt</source>
+   <target>Brussels</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BelgradeDublin">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BelgradeGlasgow">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BelgradeLondon">
+   <source>Hamburg</source>
+   <target>London</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BerlinBordeaux">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BerlinBrussels">
+   <source>Frankfurt</source>
+   <target>Brussels</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BerlinDublin">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BerlinFrankfurt">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>28.0</demandValue>
+  </demand>
+  <demand id="BerlinGlasgow">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="BerlinLondon">
+   <source>Hamburg</source>
+   <target>London</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="BerlinMadrid">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BerlinParis">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BerlinStrasbourg">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BordeauxBrussels">
+   <source>Paris</source>
+   <target>Brussels</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxBudapest">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxCopenhagen">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxDublin">
+   <source>Paris</source>
+   <target>London</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxFrankfurt">
+   <source>Paris</source>
+   <target>Frankfurt</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="BordeauxGlasgow">
+   <source>Paris</source>
+   <target>Amsterdam</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BordeauxHamburg">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxLondon">
+   <source>Paris</source>
+   <target>London</target>
+   <demandValue>16.0</demandValue>
+  </demand>
+  <demand id="BordeauxMunich">
+   <source>Paris</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BordeauxOslo">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxPrague">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxStockholm">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxVienna">
+   <source>Paris</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BordeauxWarsaw">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsBudapest">
+   <source>Brussels</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsCopenhagen">
+   <source>Brussels</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsDublin">
+   <source>Brussels</source>
+   <target>London</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsFrankfurt">
+   <source>Brussels</source>
+   <target>Frankfurt</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="BrusselsGlasgow">
+   <source>Brussels</source>
+   <target>Amsterdam</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BrusselsHamburg">
+   <source>Brussels</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BrusselsLondon">
+   <source>Brussels</source>
+   <target>London</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="BrusselsLyon">
+   <source>Brussels</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsMadrid">
+   <source>Brussels</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsMilan">
+   <source>Brussels</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BrusselsMunich">
+   <source>Brussels</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BrusselsOslo">
+   <source>Brussels</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsParis">
+   <source>Brussels</source>
+   <target>Paris</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BrusselsPrague">
+   <source>Brussels</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsRome">
+   <source>Brussels</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsStockholm">
+   <source>Brussels</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsStrasbourg">
+   <source>Brussels</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BrusselsVienna">
+   <source>Brussels</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsWarsaw">
+   <source>Brussels</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BrusselsZagreb">
+   <source>Brussels</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BrusselsZurich">
+   <source>Brussels</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BudapestDublin">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BudapestGlasgow">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BudapestLondon">
+   <source>Hamburg</source>
+   <target>London</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="BudapestMadrid">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BudapestParis">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="BudapestStrasbourg">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="CopenhagenDublin">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="CopenhagenFrankfurt">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="CopenhagenGlasgow">
+   <source>Hamburg</source>
+   <target>Amsterdam</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="CopenhagenLondon">
+   <source>Hamburg</source>
+   <target>London</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="CopenhagenMadrid">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="CopenhagenParis">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="CopenhagenStrasbourg">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinFrankfurt">
+   <source>London</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinHamburg">
+   <source>London</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinLyon">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinMadrid">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinMilan">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinMunich">
+   <source>London</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinOslo">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinParis">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinPrague">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinRome">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinStockholm">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinStrasbourg">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinVienna">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinWarsaw">
+   <source>London</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinZagreb">
+   <source>London</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="DublinZurich">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="FrankfurtGlasgow">
+   <source>Frankfurt</source>
+   <target>Amsterdam</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="FrankfurtHamburg">
+   <source>Frankfurt</source>
+   <target>Hamburg</target>
+   <demandValue>20.0</demandValue>
+  </demand>
+  <demand id="FrankfurtLondon">
+   <source>Frankfurt</source>
+   <target>London</target>
+   <demandValue>20.0</demandValue>
+  </demand>
+  <demand id="FrankfurtLyon">
+   <source>Frankfurt</source>
+   <target>Paris</target>
+   <demandValue>16.0</demandValue>
+  </demand>
+  <demand id="FrankfurtMadrid">
+   <source>Frankfurt</source>
+   <target>Paris</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="FrankfurtOslo">
+   <source>Frankfurt</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="FrankfurtParis">
+   <source>Frankfurt</source>
+   <target>Paris</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="FrankfurtPrague">
+   <source>Frankfurt</source>
+   <target>Hamburg</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="FrankfurtStockholm">
+   <source>Frankfurt</source>
+   <target>Hamburg</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="FrankfurtWarsaw">
+   <source>Frankfurt</source>
+   <target>Hamburg</target>
+   <demandValue>34.0</demandValue>
+  </demand>
+  <demand id="GlasgowHamburg">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="GlasgowLondon">
+   <source>Amsterdam</source>
+   <target>London</target>
+   <demandValue>54.0</demandValue>
+  </demand>
+  <demand id="GlasgowLyon">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="GlasgowMadrid">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="GlasgowMilan">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="GlasgowMunich">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="GlasgowOslo">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="GlasgowParis">
+   <source>Amsterdam</source>
+   <target>Paris</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="GlasgowPrague">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="GlasgowRome">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="GlasgowStockholm">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="GlasgowStrasbourg">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="GlasgowVienna">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="GlasgowWarsaw">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="GlasgowZagreb">
+   <source>Amsterdam</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="GlasgowZurich__part_1">
+   <source>Amsterdam</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="GlasgowZurich__part_2">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="HamburgLondon">
+   <source>Hamburg</source>
+   <target>London</target>
+   <demandValue>14.0</demandValue>
+  </demand>
+  <demand id="HamburgLyon">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="HamburgMadrid">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="HamburgMilan">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="HamburgMunich">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="HamburgParis">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="HamburgRome">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="HamburgStrasbourg">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="HamburgZurich">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="LondonLyon">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="LondonMadrid">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>20.0</demandValue>
+  </demand>
+  <demand id="LondonMilan">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="LondonMunich__part_1">
+   <source>London</source>
+   <target>Frankfurt</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="LondonMunich__part_2">
+   <source>London</source>
+   <target>Frankfurt</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="LondonOslo">
+   <source>London</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="LondonParis">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>22.0</demandValue>
+  </demand>
+  <demand id="LondonPrague">
+   <source>London</source>
+   <target>Hamburg</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="LondonRome">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>10.0</demandValue>
+  </demand>
+  <demand id="LondonStockholm">
+   <source>London</source>
+   <target>Hamburg</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="LondonStrasbourg">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>8.0</demandValue>
+  </demand>
+  <demand id="LondonVienna">
+   <source>London</source>
+   <target>Frankfurt</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="LondonWarsaw">
+   <source>London</source>
+   <target>Hamburg</target>
+   <demandValue>12.0</demandValue>
+  </demand>
+  <demand id="LondonZagreb">
+   <source>London</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="LondonZurich">
+   <source>London</source>
+   <target>Paris</target>
+   <demandValue>6.0</demandValue>
+  </demand>
+  <demand id="MadridMunich">
+   <source>Paris</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="MadridOslo">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="MadridPrague">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="MadridStockholm">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="MunichParis">
+   <source>Frankfurt</source>
+   <target>Paris</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="OsloParis">
+   <source>Hamburg</source>
+   <target>Paris</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="OsloStrasbourg">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="ParisPrague">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="ParisStockholm">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="ParisVienna">
+   <source>Paris</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="ParisWarsaw__part_1">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>1.0</demandValue>
+  </demand>
+  <demand id="ParisWarsaw__part_2">
+   <source>Paris</source>
+   <target>Hamburg</target>
+   <demandValue>3.0</demandValue>
+  </demand>
+  <demand id="ParisZagreb">
+   <source>Paris</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="PragueStrasbourg">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="StockholmStrasbourg">
+   <source>Hamburg</source>
+   <target>Frankfurt</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="StrasbourgWarsaw">
+   <source>Frankfurt</source>
+   <target>Hamburg</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::BerlinKarlsruhe">
+   <source>right1::Mannheim</source>
+   <target>right1::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::BremenKarlsruhe">
+   <source>right1::Mannheim</source>
+   <target>right1::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::DortmundKarlsruhe">
+   <source>right1::Mannheim</source>
+   <target>right1::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::DuesseldorfKarlsruhe">
+   <source>right1::Mannheim</source>
+   <target>right1::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::EssenKarlsruhe">
+   <source>right1::Mannheim</source>
+   <target>right1::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::FrankfurtKarlsruhe">
+   <source>right1::Mannheim</source>
+   <target>right1::Karlsruhe</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::HamburgKarlsruhe">
+   <source>right1::Mannheim</source>
+   <target>right1::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::HannoverKarlsruhe">
+   <source>right1::Mannheim</source>
+   <target>right1::Karlsruhe</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::KarlsruheKoeln">
+   <source>right1::Karlsruhe</source>
+   <target>right1::Mannheim</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::KarlsruheLeipzig">
+   <source>right1::Karlsruhe</source>
+   <target>right1::Mannheim</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::KarlsruheMannheim">
+   <source>right1::Karlsruhe</source>
+   <target>right1::Mannheim</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::KarlsruheMuenchen">
+   <source>right1::Karlsruhe</source>
+   <target>right1::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::KarlsruheNuernberg">
+   <source>right1::Karlsruhe</source>
+   <target>right1::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::KarlsruheStuttgart">
+   <source>right1::Karlsruhe</source>
+   <target>right1::Stuttgart</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::KarlsruheUlm">
+   <source>right1::Karlsruhe</source>
+   <target>right1::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+  <demand id="right1::MannheimStuttgart">
+   <source>right1::Mannheim</source>
+   <target>right1::Stuttgart</target>
+   <demandValue>4.0</demandValue>
+  </demand>
+  <demand id="right1::MannheimUlm">
+   <source>right1::Mannheim</source>
+   <target>right1::Stuttgart</target>
+   <demandValue>2.0</demandValue>
+  </demand>
+ </demands>
+</network>

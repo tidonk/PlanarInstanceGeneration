@@ -48,6 +48,6 @@ def main():
         target.parent.mkdir(parents=True, exist_ok=True)
         temporary=target.with_suffix(target.suffix+'.tmp');temporary.write_bytes(data);temporary.replace(target)
     with ThreadPoolExecutor(max_workers=4) as pool: list(pool.map(fetch, rows))
-    print(f'Verified {len(rows)} input files. No benchmark files belong in Git.')
+    print(f'Verified {len(rows)} original input files.')
 
 if __name__=='__main__': main()

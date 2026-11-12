@@ -8,9 +8,10 @@ and exact outer face (OF-B).
 
 ## Repository and recorded results
 
-The `main` branch contains source code, experiment settings, tests, and
-reproduction instructions. Benchmark data, generated instances, recorded
-results, solver binaries, and manuscript files are excluded from Git.
+The `main` branch contains source code, experiment settings, tests,
+reproduction instructions, and the 1,000 final generated instances from the
+main experiment. Original benchmark inputs, recorded solver results, solver
+binaries, and manuscript files are excluded from Git.
 
 A fresh checkout can rerun the experiments after installing the dependencies
 and obtaining the benchmark inputs. To reproduce the reported numerical plots
@@ -76,7 +77,15 @@ julia +1.12.6 --project=third_party/BendersNetworkDesign -e 'using Pkg; Pkg.inst
 
 ## Benchmark data
 
-No original or generated instances are distributed here. Download them from
+The [published instances](instances/README.md) contain the exact 500 PGLib
+and 500 SNDlib composites used in the main evaluation, with a catalogue,
+source attribution, and SHA-256 checksums. Verify them from the repository root:
+
+```bash
+sha256sum -c instances/SHA256SUMS
+```
+
+To generate new instances, download the original inputs from
 [PGLib-OPF](https://github.com/power-grid-lib/pglib-opf) and
 [SNDlib](https://sndlib.zib.de/) under their respective terms:
 
@@ -174,6 +183,6 @@ See [CITATION.cff](CITATION.cff) for citation metadata and
 [CONTRIBUTORS.md](CONTRIBUTORS.md) for project and library credits. The arXiv identifier will
 be added when assigned. Original software is licensed under
 **GPL-3.0-or-later**; original documentation is under **CC BY 4.0**. Third-party
-sources retain their own licenses. See [LICENSE](LICENSE),
+sources and benchmark data retain their own terms. See [LICENSE](LICENSE),
 [the documentation license](docs/LICENSE-CC-BY-4.0.txt), and
 [THIRD_PARTY.md](THIRD_PARTY.md).

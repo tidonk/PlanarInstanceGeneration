@@ -1,6 +1,7 @@
 # Reproducing the recorded plots
 
-The source repository excludes the paper results. The separate archive
+The source repository includes the [1,000 final instances](../instances/README.md)
+but excludes recorded solver results. The separate archive
 `planar-evaluation-20261110.zip` contains the original inputs, generated graphs,
 recorded solver outcomes, and the manuscript build inputs from 10 November 2026.
 Its SHA-256 is:
