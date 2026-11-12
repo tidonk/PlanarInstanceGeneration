@@ -1,0 +1,47 @@
+# Fourteen-hour source skewness solves using the same OGDF backend.
+
+universe = vanilla
+batch_name = pig-pglib-source-skewness-14h
+executable = .venv/bin/python
+arguments = check/scripts/evaluate_pglib_source_skewness.py $(source) $(voltage_option:) --time-limit 50400 --threads 16 --seed 0
+
+should_transfer_files = NO
+getenv = True
+fs_domain = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus = $(cpus:16)
+request_memory = 8192
+request_disk = 4194304
+
+# Leave room outside the native budget for preprocessing and serialization.
+max_runtime = 57600
+hold_margin = 3600
++MaxRuntime = $(max_runtime)
+periodic_hold = (JobStatus == 2) && (JobCurrentStartExecutingDate =!= UNDEFINED) && \
+                ((time() - JobCurrentStartExecutingDate) > ($(max_runtime) + $(hold_margin)))
+periodic_hold_reason = strcat("source skewness runtime exceeded ", "$(max_runtime)", "s + margin")
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/ogdf_pglib_source_skewness_14h/$(source).out
+error = check/eval/logs/ogdf_pglib_source_skewness_14h/$(source).err
+log = check/eval/logs/ogdf_pglib_source_skewness_14h/cluster.log
+
+queue source from (
+pglib_opf_case118_ieee
+pglib_opf_case1354_pegase
+pglib_opf_case162_ieee_dtc
+pglib_opf_case179_goc
+pglib_opf_case1888_rte
+pglib_opf_case1951_rte
+pglib_opf_case197_snem
+pglib_opf_case2000_goc
+pglib_opf_case200_activ
+pglib_opf_case240_pserc
+pglib_opf_case300_ieee
+pglib_opf_case500_goc
+pglib_opf_case588_sdet
+pglib_opf_case73_ieee_rts
+pglib_opf_case793_goc
+pglib_opf_case89_pegase
+)

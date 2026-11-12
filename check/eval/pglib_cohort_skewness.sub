@@ -1,0 +1,39 @@
+# One exact-skewness job for one generated PGLib method instance. DAGMan
+# releases five of these jobs immediately after the matching cohort finishes.
+
+universe       = vanilla
+experiment     = $(experiment:full_shared4_300)
+include : check/eval/batch_names.inc
+output_name    = $(output_name:full_shared4_300_pglib_exact)
+time_limit     = $(time_limit:3600)
+priority       = $(job_priority:0)
+
+batch_name = pig-$(batch_group)-pglib-skewness$(batch_variant)
+executable = .venv/bin/python
+arguments  = check/scripts/evaluate_pglib_cohort_skewness.py $(experiment) $(instance) $(strategy) --output-name $(output_name) --time-limit $(time_limit) --seed $(seed) --threads $(threads:16)
+
+should_transfer_files = NO
+getenv = PATH, HOME, USER, LOGNAME, GUROBI_HOME, GRB_LICENSE_FILE, LD_LIBRARY_PATH, LANG, LC_ALL
+fs_domain = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus   = $(cpus:16)
+request_memory = 14336
+request_disk   = 4194304
+
+# Up to five cached shared piece solves and one final solve, plus setup.
+max_runtime = $(max_runtime:3600)
+hold_margin = $(hold_margin:600)
++MaxRuntime = $(max_runtime)
+periodic_hold = (JobStatus == 2) && (JobCurrentStartExecutingDate =!= UNDEFINED) && \
+                ((time() - JobCurrentStartExecutingDate) > ($(max_runtime) + $(hold_margin)))
+periodic_hold_reason = strcat("instance skewness runtime exceeded ", "$(max_runtime)", "s + margin")
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/$(experiment)/pglib/skewness/i$(instance)_$(strategy).out
+error  = check/eval/logs/$(experiment)/pglib/skewness/i$(instance)_$(strategy).err
+log    = check/eval/logs/$(experiment)/pglib/skewness/cluster.log
+
+nice_user = $(nice_user:False)
+
+queue

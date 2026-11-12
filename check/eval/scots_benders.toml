@@ -1,0 +1,37 @@
+[BENDERS]
+
+    [BENDERS.PARTIAL_DECOMP]
+        ENABLED                         = true
+        INCLUDE_BASE_PF                 = true                  # include base power flow in master
+        N_MAX_CONTINGENCIES             = 0                     # no contingency PFs in master
+        N_MAX_CONTINGENCIES_PCT         = 0.0
+
+    [BENDERS.PARTIAL]
+        ENABLED                         = true                  # partial subproblem solving
+        SORTING_MODE                    = ":RND"                # sorting mode for subproblems {:SCORE, :RND}
+        SCORE_DECAY                     = 1.0                   # per-round decay factor in [0,1] for the running counters (n_calls, n_cuts_used, sum_violations)
+        ETA_ROBUSTNESS                  = 10.0                  # robustness parameter for cuts
+        ETA_ROBUSTNESS_FEAS             = 1.0                   # robustness parameter for feasibility cuts
+        STAB_ROUND_FREQ                 = "Inf"                 # frequency of stabilization rounds (all subproblems are solved, -1 for no stabilization)
+
+        [BENDERS.PARTIAL.LIMITS]
+            STOP_AFTER_TIME             = "Inf"                 # time limit for solving the subproblem (in seconds)
+            STOP_AFTER_N_HITS           = "Inf"                 # number of hits before stopping
+            STOP_AFTER_N_HITS_REL       = 0.05
+            STOP_AFTER_N_MISSES         = "Inf"                 # number of misses before stopping (after at least one cut was generated)
+            STOP_AFTER_N_FEAS_CUTS      = "Inf"                 # number of feasibility cuts before stopping
+            STOP_ON_PB                  = false                 # stop if the current primal bound is better than the master solution will be after adding these cuts
+            STOP_ON_PB_REL_BUFFER       = 0.1                   # stop if current master solution value * (1 - rel_tol) is worse than primal bound
+            MIN_PRIO                    = 0.0                   # minimum subproblem priority (after at least one cut was generated)
+
+    [BENDERS.CUTS]
+        [BENDERS.CUTS.SELECTION]
+            ENABLED                     = true                  # enable cut selection
+            METHOD                      = ":VIOLATION"          # cut selection mode {:VIOLATION, :VIOLATION_AGG, :DIVERSITY, :DIVERSITY_AGG, :DIVERSITY_AGG_HYB, :HYBRID, :RANDOM, :RANDOM_AGG}
+            FEASCUT_ONLY                = false                  # add all feasibility cuts and skip optimality cut selection when feasibility cuts exist
+            FEASCUT_INF_VIOL            = true                  # boost feasibility cut violations to Inf so they sort to top during normal selection
+            MIN_OPT_CUTS                = 1                      # minimum number of optimality cuts to include in the selection (0 to disable)
+
+            [BENDERS.CUTS.SELECTION.VIOLATION]
+                LIMIT_MODE              = ":abs_num"            # limit mode {:abs_num, :rel_num, :rel_num_per_iter, :pb}
+                LIMIT_ABS_NUM           = 5                     # absolute number of cuts to be selected

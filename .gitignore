@@ -1,0 +1,26 @@
+check/data
+check/results
+__pycache__/
+docs/_build/
+*.egg-info/
+*.py[cod]
+/gurobi.log
+.venv
+/check/eval/*.jobs
+/check/eval/application_jobs/
+/check/eval/logs/
+/check/eval/*.dag.*
+/check/eval/dag_prepare.*
+
+/build/
+
+AGENTS.md
+*.orig
+/check/eval/*.dag
+/.condor_dagman.out
+/.cache/
+
+/build
+
+# Optional local measurements for recreating the recorded flow plots.
+/reproduction/flow-plot-data/

@@ -1,0 +1,18 @@
+universe = vanilla
+executable = check/eval/julia_cache_check.sh
+should_transfer_files = NO
+getenv = HOME, PATH, GUROBI_HOME, GRB_LICENSE_FILE
+batch_name = pig-julia-local-check
+nice_user = False
+priority = 1000
++FileSystemDomain = "clustor"
+request_cpus = 2
+request_memory = 14336
+request_disk = 4194304
++MaxRuntime = 7200
+periodic_hold = (JobStatus == 2) && ((time() - JobCurrentStartExecutingDate) > 9000)
+on_exit_hold = (ExitCode =!= 0)
+output = check/eval/logs/ogdf_supplement_20261106/cache.out
+error = check/eval/logs/ogdf_supplement_20261106/cache.err
+log = check/eval/logs/ogdf_supplement_20261106/cache.log
+queue

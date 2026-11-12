@@ -1,0 +1,18 @@
+# Fresh source dispatches using the pinned InnOpTEM base-case OPF.
+universe = vanilla
+executable = check/eval/preprocess_pglib.sh
+arguments = $(source) $(result_name)
+priority = $(job_priority:50)
+should_transfer_files = NO
+getenv = PATH, HOME, USER, LOGNAME, GUROBI_HOME, GRB_LICENSE_FILE, LD_LIBRARY_PATH, LANG, LC_ALL
+environment = "PIG_SETTINGS_FILE=$(settings_file)"
++FileSystemDomain = "clustor"
+request_cpus = 1
+request_memory = 14336
+request_disk = 2097152
++MaxRuntime = 43200
+on_exit_hold = (ExitCode =!= 0)
+output = check/eval/logs/$(experiment)/pglib/sources/$(source_id).out
+error = check/eval/logs/$(experiment)/pglib/sources/$(source_id).err
+log = check/eval/logs/$(experiment)/pglib/sources/cluster.log
+queue

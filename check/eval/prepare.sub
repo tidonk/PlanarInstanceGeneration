@@ -1,0 +1,16 @@
+# Local DAG preflight: materialize job tables and all Condor log directories.
+
+universe = local
+batch_name = pig-prepare
+executable = check/eval/prepare.sh
+arguments =
+should_transfer_files = NO
+getenv = True
+request_cpus = 1
+request_memory = 256
+request_disk = 1024
+on_exit_hold = (ExitCode =!= 0)
+output = check/eval/dag_prepare.out
+error = check/eval/dag_prepare.err
+log = check/eval/dag_prepare.log
+queue

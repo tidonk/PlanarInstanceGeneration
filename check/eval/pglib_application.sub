@@ -1,0 +1,50 @@
+# One independent SCOPF (TAL=0) or SCOTS (TAL>0) evaluation.
+universe = vanilla
+experiment = $(experiment:full_shared4_300)
+include : check/eval/batch_names.inc
+cohort = $(cohort:all)
+dataset = pglib
+topological_action_limit = $(topological_action_limit:0)
+if $(topological_action_limit)
+application_name = scots
+application_label = SCOTS
+else
+application_name = scopf
+application_label = SCOPF
+endif
+batch_name = pig-$(batch_group)-pglib-$(application_name)$(batch_variant)
+priority = $(job_priority:0)
+
+executable = check/eval/application_job.sh
+arguments = $(dataset) $(instance_file) $(run_name) $(seed) $(strategy) $(instance_index)
+should_transfer_files = NO
+getenv = HOME, PATH, GUROBI_HOME, GRB_LICENSE_FILE
+settings_file = $(settings_file:)
+application_time_limit = $(application_time_limit:300)
+jobs_file = $(jobs_file:check/eval/application_jobs/$(experiment)/pglib_$(cohort).jobs)
+environment = "PIG_SETTINGS_FILE=$(settings_file) PIG_APPLICATION_TIME_LIMIT=$(application_time_limit) PIG_TOPOLOGICAL_ACTION_LIMIT=$(topological_action_limit)"
+
+fs_domain = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus = 1
+request_memory = 14336
+request_disk = 4194304
+
+max_runtime = $(max_runtime:14400)
+hold_margin = $(hold_margin:1800)
++PIGUnlimitedScopf = ($(unlimited_scopf:False) || regexp("ogdf_sampling_", "$(settings_file)"))
++MaxRuntime = ifThenElse(PIGUnlimitedScopf, undefined, $(max_runtime))
+periodic_hold = (!PIGUnlimitedScopf) && (JobStatus == 2) && (JobCurrentStartExecutingDate =!= UNDEFINED) && \
+                ((time() - JobCurrentStartExecutingDate) > ($(max_runtime) + $(hold_margin)))
+periodic_hold_reason = strcat("$(application_label) evaluation runtime exceeded ", "$(max_runtime)", "s + margin")
+periodic_hold_subcode = 1
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/$(experiment)/pglib/application/$(artifact_stem)_tal$(topological_action_limit).out
+error = check/eval/logs/$(experiment)/pglib/application/$(artifact_stem).err
+log = check/eval/logs/$(experiment)/pglib/application/cluster.log
+
+nice_user = $(nice_user:False)
+
+queue artifact_stem, instance_file, run_name, seed, strategy, instance_index from $(jobs_file)

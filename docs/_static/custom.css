@@ -1,0 +1,25 @@
+:root {
+  --pig-ink: #172033;
+  --pig-accent: #246b8e;
+}
+
+body {
+  color: var(--pig-ink);
+}
+
+div.body h1,
+div.body h2,
+div.body h3,
+div.sphinxsidebar h3,
+div.sphinxsidebar h4 {
+  color: var(--pig-accent);
+}
+
+div.body {
+  max-width: 56rem;
+}
+
+code,
+pre {
+  font-size: 0.92em;
+}

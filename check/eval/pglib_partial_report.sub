@@ -1,0 +1,34 @@
+# Fast preliminary PGLib report from every complete paired cohort.
+# This uses deterministic four-restart skewness bounds, not branch-and-cut.
+
+universe      = vanilla
+experiment    = $(experiment:full_shared4_300)
+output_name   = $(output_name:full_shared4_300_pglib_partial)
+report_cpus   = $(report_cpus:8)
+
+batch_name = pig-$(experiment)-pglib-partial-report
+executable = .venv/bin/python
+arguments  = check/scripts/build_partial_pglib_report.py $(experiment) --output-name $(output_name) --iterations 4 --workers $(report_cpus) --gallery all --overwrite
+
+should_transfer_files = NO
+getenv = True
+fs_domain = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus   = $(report_cpus)
+request_memory = 8192
+request_disk   = 8388608
+
+max_runtime = $(max_runtime:21600)
+hold_margin = $(hold_margin:1800)
++MaxRuntime = $(max_runtime)
+periodic_hold = (JobStatus == 2) && (JobCurrentStartExecutingDate =!= UNDEFINED) && \
+                ((time() - JobCurrentStartExecutingDate) > ($(max_runtime) + $(hold_margin)))
+periodic_hold_reason = strcat("partial report runtime exceeded ", "$(max_runtime)", "s + margin")
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/$(experiment)/pglib/partial_report.out
+error  = check/eval/logs/$(experiment)/pglib/partial_report.err
+log    = check/eval/logs/$(experiment)/pglib/partial_report.log
+
+queue

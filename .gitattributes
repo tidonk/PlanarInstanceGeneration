@@ -1,0 +1,2 @@
+# Preserve third-party source snapshots byte for byte, including whitespace.
+third_party/** -whitespace

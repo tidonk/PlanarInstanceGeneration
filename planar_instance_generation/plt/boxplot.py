@@ -1,0 +1,239 @@
+"""Publication-ready TikZ boxplots for structural comparisons."""
+
+from __future__ import annotations
+
+from dataclasses import asdict, dataclass
+import json
+import math
+from pathlib import Path
+import re
+from typing import Iterable
+
+import numpy as np
+
+from planar_instance_generation.plt.tikz import PlotArtifacts
+
+
+_COLORS = (
+    "0072B2",
+    "E69F00",
+    "009E73",
+    "CC79A7",
+    "56B4E9",
+    "D55E00",
+    "332288",
+    "999999",
+)
+_HEX_COLOR = re.compile(r"^#?[0-9A-Fa-f]{6}$")
+
+
+@dataclass(frozen=True, slots=True)
+class BoxplotSeries:
+    """One comparison group."""
+
+    label: str
+    values: tuple[float, ...]
+    color: str | None = None
+
+    def __post_init__(self) -> None:
+        if not self.label:
+            raise ValueError("series label must not be empty")
+        if not self.values or not all(math.isfinite(value) for value in self.values):
+            raise ValueError("series values must be nonempty and finite")
+        if self.color is not None and not _HEX_COLOR.fullmatch(self.color):
+            raise ValueError(f"invalid six-digit RGB color: {self.color!r}")
+
+
+@dataclass(frozen=True, slots=True)
+class BoxplotSummary:
+    lower_whisker: float
+    lower_quartile: float
+    median: float
+    upper_quartile: float
+    upper_whisker: float
+    outliers: tuple[float, ...]
+
+
+def write_boxplot(
+    series: Iterable[BoxplotSeries],
+    output_base: str | Path,
+    *,
+    y_label: str,
+    title: str | None = None,
+    width_cm: float = 8.4,
+    height_cm: float = 5.8,
+    overwrite: bool = False,
+) -> PlotArtifacts:
+    """Write a Tukey boxplot as a TikZ fragment, preview, and JSON data."""
+
+    groups = tuple(series)
+    if not groups:
+        raise ValueError("at least one boxplot series is required")
+    if width_cm <= 0 or height_cm <= 0:
+        raise ValueError("plot dimensions must be positive")
+    base = Path(output_base)
+    if base.suffix:
+        raise ValueError("output_base must not have a file extension")
+    artifacts = PlotArtifacts(
+        tikz=base.with_suffix(".tikz"),
+        standalone_tex=base.with_suffix(".tex"),
+        coordinates_json=base.with_suffix(".json"),
+    )
+    existing = tuple(path.exists() for path in asdict(artifacts).values())
+    if all(existing) and not overwrite:
+        return artifacts
+    if any(existing) and not overwrite:
+        raise FileExistsError(f"incomplete boxplot artifact set at {base}")
+
+    summaries = tuple(_summarize(group.values) for group in groups)
+    colors = tuple(
+        (group.color or _COLORS[index % len(_COLORS)]).lstrip("#").upper()
+        for index, group in enumerate(groups)
+    )
+    base.parent.mkdir(parents=True, exist_ok=True)
+    artifacts.tikz.write_text(
+        _tikz(groups, summaries, colors, y_label, title, width_cm, height_cm),
+        encoding="utf-8",
+    )
+    artifacts.standalone_tex.write_text(_standalone(), encoding="utf-8")
+    artifacts.coordinates_json.write_text(
+        json.dumps(
+            {
+                "kind": "tukey_boxplot",
+                "quartile_method": "numpy_linear",
+                "whisker_rule": "1.5_iqr",
+                "y_label": y_label,
+                "title": title,
+                "series": [
+                    {
+                        "label": group.label,
+                        "color": f"#{color}",
+                        "values": list(group.values),
+                        "summary": asdict(summary),
+                    }
+                    for group, color, summary in zip(
+                        groups, colors, summaries, strict=True
+                    )
+                ],
+            },
+            indent=2,
+            sort_keys=True,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    return artifacts
+
+
+def _summarize(values: tuple[float, ...]) -> BoxplotSummary:
+    data = np.sort(np.asarray(values, dtype=np.float64))
+    lower_quartile, median, upper_quartile = np.quantile(data, [0.25, 0.5, 0.75])
+    spread = upper_quartile - lower_quartile
+    within = data[
+        (data >= lower_quartile - 1.5 * spread)
+        & (data <= upper_quartile + 1.5 * spread)
+    ]
+    lower_whisker = float(within[0])
+    upper_whisker = float(within[-1])
+    outliers = tuple(
+        float(value)
+        for value in data[(data < lower_whisker) | (data > upper_whisker)]
+    )
+    return BoxplotSummary(
+        lower_whisker=lower_whisker,
+        lower_quartile=float(lower_quartile),
+        median=float(median),
+        upper_quartile=float(upper_quartile),
+        upper_whisker=upper_whisker,
+        outliers=outliers,
+    )
+
+
+def _tikz(
+    groups: tuple[BoxplotSeries, ...],
+    summaries: tuple[BoxplotSummary, ...],
+    colors: tuple[str, ...],
+    y_label: str,
+    title: str | None,
+    width_cm: float,
+    height_cm: float,
+) -> str:
+    labels = ",".join("{" + _escape(group.label) + "}" for group in groups)
+    rotation = 32 if len(groups) > 4 else 18
+    lines = [
+        "% Generated by planar-instance-generation.\n",
+        "\\pgfplotsset{compat=1.16}\n",
+        "\\usepgfplotslibrary{statistics}\n",
+    ]
+    lines.extend(
+        f"\\definecolor{{pigBox{index}}}{{HTML}}{{{color}}}\n"
+        for index, color in enumerate(colors, start=1)
+    )
+    lines.extend(
+        [
+            "\\begin{tikzpicture}\n",
+            "\\begin{axis}[\n",
+            f"  width={width_cm:.3f}cm,height={height_cm:.3f}cm,\n",
+            "  boxplot/draw direction=y,\n",
+            f"  ylabel={{{_escape(y_label)}}},\n",
+            f"  xtick={{{','.join(str(i) for i in range(1, len(groups) + 1))}}},\n",
+            f"  xticklabels={{{labels}}},\n",
+            f"  x tick label style={{font=\\footnotesize,rotate={rotation},anchor=north east}},\n",
+            "  label style={font=\\small},tick label style={font=\\footnotesize},\n",
+            "  axis line style={black!65},major grid style={black!12},ymajorgrids,\n",
+            "  enlarge x limits=0.22,\n",
+        ]
+    )
+    if title:
+        lines.append(f"  title={{{_escape(title)}}},title style={{font=\\small\\bfseries}},\n")
+    lines.append("]\n")
+    for position, summary in enumerate(summaries, start=1):
+        values = asdict(summary)
+        prepared = ",".join(
+            f"{key.replace('_', ' ')}={_number(value)}"
+            for key, value in values.items()
+            if key != "outliers"
+        )
+        coordinates = " ".join(f"(0,{_number(value)})" for value in summary.outliers)
+        lines.append(
+            "\\addplot+[boxplot prepared={"
+            f"draw position={position},{prepared}"
+            "},draw=pigBox"
+            f"{position},fill=pigBox{position},fill opacity=0.32,"
+            "mark=*,mark options={fill=white,scale=0.55}] "
+            f"coordinates {{{coordinates}}};\n"
+        )
+    lines.extend(["\\end{axis}\n", "\\end{tikzpicture}\n"])
+    return "".join(lines)
+
+
+def _standalone() -> str:
+    return (
+        "\\documentclass[border=2pt]{standalone}\n"
+        "\\usepackage[T1]{fontenc}\n"
+        "\\usepackage{lmodern}\n"
+        "\\usepackage{pgfplots}\n"
+        "\\pgfplotsset{compat=1.16}\n"
+        "\\usepgfplotslibrary{statistics}\n"
+        "\\begin{document}\n"
+        "\\input{\\jobname.tikz}\n"
+        "\\end{document}\n"
+    )
+
+
+def _number(value: float) -> str:
+    return format(float(value), ".12g")
+
+
+def _escape(value: str) -> str:
+    replacements = {
+        "\\": "\\textbackslash{}",
+        "&": "\\&",
+        "%": "\\%",
+        "$": "\\$",
+        "#": "\\#",
+        "_": "\\_",
+        "{": "\\{",
+        "}": "\\}",
+    }
+    return "".join(replacements.get(character, character) for character in value)

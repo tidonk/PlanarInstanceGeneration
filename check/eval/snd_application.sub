@@ -1,0 +1,45 @@
+# One independent full N-1 SND evaluation per accepted SNDlib composite.
+universe = vanilla
+experiment = $(experiment:full_shared4_300)
+include : check/eval/batch_names.inc
+cohort = $(cohort:all)
+dataset = snd
+snd_method = $(snd_method:standard)
+snd_jobs = $(snd_jobs:snd_all)
+standard_snd_method = True
+if defined $(snd_method)_snd_method
+batch_name = pig-$(batch_group)-snd$(batch_variant)
+else
+batch_name = pig-$(batch_group)-snd$(batch_variant)-$(snd_method)
+endif
+priority = $(job_priority:0)
+
+executable = check/eval/application_job.sh
+arguments = $(dataset) $(instance_file) $(run_name) $(seed) $(strategy) $(instance_index) $(snd_method)
+should_transfer_files = NO
+getenv = HOME, PATH, GUROBI_HOME, GRB_LICENSE_FILE
+settings_file = $(settings_file:)
+environment = "PIG_SETTINGS_FILE=$(settings_file)"
+
+fs_domain = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus = 1
+request_memory = 14336
+request_disk = 4194304
+
+max_runtime = $(max_runtime:14400)
+hold_margin = $(hold_margin:1800)
++MaxRuntime = $(max_runtime)
+periodic_hold = (JobStatus == 2) && (JobCurrentStartExecutingDate =!= UNDEFINED) && \
+                ((time() - JobCurrentStartExecutingDate) > ($(max_runtime) + $(hold_margin)))
+periodic_hold_reason = strcat("SND evaluation runtime exceeded ", "$(max_runtime)", "s + margin")
+periodic_hold_subcode = 1
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/$(experiment)/snd/application/$(artifact_stem)_$(snd_method).out
+error = check/eval/logs/$(experiment)/snd/application/$(artifact_stem)_$(snd_method).err
+log = check/eval/logs/$(experiment)/snd/application/cluster.log
+
+jobs_file = $(jobs_file:check/eval/application_jobs/$(experiment)/$(snd_jobs).jobs)
+queue artifact_stem, instance_file, run_name, seed, strategy, instance_index from $(jobs_file)

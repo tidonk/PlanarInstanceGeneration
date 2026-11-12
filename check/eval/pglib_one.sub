@@ -1,0 +1,42 @@
+# One PGLib cohort generation process. ``instance`` and ``seed`` are supplied
+# by the explicit DAG node so its five skewness children can depend on it.
+
+universe   = vanilla
+experiment = $(experiment:main)
+include : check/eval/batch_names.inc
+dataset    = $(dataset:pglib)
+batch_name = pig-$(batch_group)-$(dataset)-generation$(batch_variant)
+sampling   = $(sampling:)
+prefer_non_leaf = $(prefer_non_leaf:0)
+settings_file = $(settings_file:)
+priority   = $(job_priority:0)
+
+executable = check/eval/job.sh
+arguments  = $(dataset) $(instance) $(seed) $(experiment) $(sampling) $(prefer_non_leaf)
+should_transfer_files = NO
+getenv = PATH, HOME, USER, LOGNAME, GUROBI_HOME, GRB_LICENSE_FILE, LD_LIBRARY_PATH, LANG, LC_ALL
+environment = "PIG_SETTINGS_FILE=$(settings_file)"
+
+fs_domain = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus   = $(cpus:16)
+request_memory = 14336
+request_disk   = 2097152
+
+max_runtime = $(max_runtime:43200)
+hold_margin = $(hold_margin:3600)
++MaxRuntime = $(max_runtime)
+periodic_hold = (JobStatus == 2) && (JobCurrentStartExecutingDate =!= UNDEFINED) && \
+                ((time() - JobCurrentStartExecutingDate) > ($(max_runtime) + $(hold_margin)))
+periodic_hold_reason = strcat("runtime exceeded max_runtime (", "$(max_runtime)", "s) + hold_margin (", "$(hold_margin)", "s)")
+periodic_hold_subcode = 1
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/$(experiment)/$(dataset)/i$(instance).out
+error  = check/eval/logs/$(experiment)/$(dataset)/i$(instance).err
+log    = check/eval/logs/$(experiment)/$(dataset)/cluster.log
+
+nice_user = $(nice_user:False)
+
+queue

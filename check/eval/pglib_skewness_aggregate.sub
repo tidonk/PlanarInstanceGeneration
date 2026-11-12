@@ -1,0 +1,28 @@
+# Lightweight aggregation of whichever per-cohort exact checkpoints exist.
+
+universe    = vanilla
+experiment  = $(experiment:full_shared4_300)
+output_name = $(output_name:full_shared4_300_pglib_exact)
+
+batch_name = pig-$(experiment)-pglib-skewness-aggregate
+executable = .venv/bin/python
+arguments  = check/scripts/aggregate_pglib_cohort_skewness.py $(experiment) --output-name $(output_name) --gallery all --overwrite
+
+should_transfer_files = NO
+getenv = True
+fs_domain = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus   = 1
+request_memory = 8192
+request_disk   = 8388608
+
+max_runtime = $(max_runtime:21600)
++MaxRuntime = $(max_runtime)
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/$(experiment)/pglib/skewness/aggregate.out
+error  = check/eval/logs/$(experiment)/pglib/skewness/aggregate.err
+log    = check/eval/logs/$(experiment)/pglib/skewness/aggregate.log
+
+queue

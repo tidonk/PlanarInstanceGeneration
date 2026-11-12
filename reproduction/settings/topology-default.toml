@@ -1,0 +1,462 @@
+##############################################################
+#################### Technical Params ########################
+##############################################################
+APPLICATION                             = "DC_SCOTS_TIME_SLACK_BENDERS"
+
+[SOLVER]
+    INCLUDE_WARMSTART_TIME_LIMIT        = false                 # deduct reported warmstart solver time from the main solve limit
+    SOLVING_TIME_LIMIT                  = 10800                 # time limit for solving the SCOTS problem. Set for full problem, and subproblems alike
+
+    [SOLVER.MULTITHREADING]
+        # Note: sum of threads should not exceed the number of physical cores
+        N_THREADS_BENDERS               = 1                     # multithreading in Benders subproblem solving
+        N_THREADS_MIP_MP                = 4                     # multithreading for MIP solver in master problem
+        N_THREADS_MIP_SP                = 1                     # multithreading for MIP solver in subproblems
+
+[TECHNICAL]
+    MISSING_LIST                        = {"gen" = {"pg_0" = '(x -> (x["pg"]))', "RDP-" = '(x -> (x["pg_0"] >= 1.1 * x["pmin"]) ? (x["pg_0"] - x["pmin"]) : x["pg"])', "RDP+" = '(x -> (x["pmax"] - x["pg_0"]))', "cost_produce" = '(x -> length(x["cost"])>1 ? x["cost"][end-1] : 0)', "cost_change" = '(x -> (x["cost_produce"]*1.1))', "ramp_60_pos" = '(x -> x["RDP+"])', "ramp_60_neg" = '(x -> x["RDP-"])'}} # params that might be missing for some instances that we add to allow for solving
+    SEED                                = 42                     # seed for random number generator
+
+[DEBUG]
+    RUN_IIS                             = false                 # execute IIS on the instance if infeasible and writes out model.lp and conflict_model.lp (IIS result)
+    ENFORCE_MAX_ANG_DIFF                = true                  # enforce maximum angle difference between buses. If false, in Benders, no feasibility cuts will be generated
+    REMOVE_SHUNTS                       = false                 # ignore shunts in the network
+    REMOVE_DC_LINES                     = false                 # ignore DC lines in the network
+
+[PRECISION]
+    SOLVER_FEASTOL                      = 0.000001              # (Float64) solver feasibility tolerance (1^-6 per default)
+    SOLVER_PREC_DIGITS                  = 7                     # (Int16) round b and angmin/angmax, in decimals, -1 to disable - WARNING: should be at least 1 digit above the set solver precision
+    POWER_PREC                          = 0.001                 # (Float16) precision for input data reading (e.g., if below that, considered to be 0)
+
+[ROUNDING]
+    MODEL_COEFFS                        = false                 # round coefficients in the model (including the objective function)
+    INPUT                               = false                 # round input data (e.g., branch limits, gen limits, B matrix, etc.)
+
+[READING]
+    RESISTANCE_THRESHOLD                = 0.00006               # (Float64) resistance threshold for branch switching
+
+##############################################################
+################### Writing & Printing #######################
+##############################################################
+[WRITING]
+    LP                                  = false                 # write model as LP file under cur_model.lp
+    MPS                                 = false                 # write model as MPS file under cur_model.mps
+    DEC                                 = false                 # write decomposition file under cur_model.dec
+    IIS                                 = false                 # write IIS MIP under conflict_model.lp
+    SLACKED_CASEFILE                    = false                 # write slacks into a modified .m file
+    REW                                 = false                 # write REW file under cur_model.rew
+    PRESOLVED                           = false                 # write presolved model under cur_model_presolved.lp
+    SOLVING_DATA_CSV                    = false                 # write solving data (RA_TOPO, RA_RD)
+
+[PRINTING]
+    CONFIDENTIAL                        = true                  # in preprocessing and postprocessing, show generator and branch names
+    FLOW_CHANGE                         = false                 # if a flow is given in an initial solution, print how it changed in our calculation (only for SCOTS-TIME)
+    CONTINGENCIES                       = false                 # print contingencies in the model
+    MONITORING                          = false                 # print monitored branches
+    SYS_BALANCE                         = false                 # print system balance
+    INSTANCE_INFO                       = true                  # print instance information
+    RESULTS                             = false                 # display results
+
+    [PRINTING.BENDERS]
+        LOG_LINE_HEADER                 = false                 # print subproblem result header
+        LOG_LINE                        = false                 # print subproblem result line
+        LOG_LINE_UNSUCC                 = false                 # print subproblem result line even if it was not successful
+        LOG_LINE_SUMMARY                = false                 # print subproblem solving iteration summary
+        LOG_LINE_INTERPROBLEM           = false                 # print intermediate problem result line
+        LOG_LINE_INTERPROBLEM_SW        = false                 # print switching actions in intermediate problem result line
+
+    [PRINTING.SOLVER]
+        LOG_TO_CONSOLE                  = false                 # print solver log to console
+        LOG_TO_CONSOLE_MP               = true                  # print solver log to console for master problem
+        LOG_TO_CONSOLE_IP               = false                  # print solver log to console for intermediate problem
+        LOG_TO_CONSOLE_SP               = false                 # print solver log to console for subproblems
+
+##############################################################
+############## Problem Costs & Contingencies #################
+##############################################################
+[BIG_M_MULT]
+    # multiplier by which original limits can be exceeded
+    PG                                  = 3                     # Int64
+    VAD                                 = 3                     # Int64
+    PD                                  = 3                     # Int64
+    SET_MAX_ANGLE_CLOSE                 = false                 # if true, set max angle difference of switchable and off branches to default (30°) or to max_angle_close (if existent)
+    MAX_ANG_OFF                         = 30                    # Int64, maximum angle difference between two buses while branch between is off (if SET_MAX_ANGLE_CLOSE is true) for matpower data
+
+[CONTINGENCIES]
+    COMPONENT_TYPES                     = [":branch"]           # network components that should be considered as contingencies
+    PG_EQUALS_PGSEC                     = true                  # REQUIRED "true" if :gen not in contingency types. Can gens be configured post-contingency
+    SLACK_EQUALS_SEC_SLACK              = false                 # REQUIRED "false" for comparability with Benders mode. Should slack be a shared variable among all contingencies? 
+
+[LIMIT_MULT]
+    APPLY_UB_MULTS                      = true                  # modify upper bounds on rate_a based on data, depending on base case or sec case
+    PF_UB_MULT                          = 1.0                   # factor of rate_a to be used as upper bound in base case FOR SLACK VARS
+    PF_UB_MULT_SEC                      = 1.0                   # factor of rate_a to be used as upper bound in contingency case FOR SLACK VARS
+    RATEA_MULT                          = 1.0                   # factor of rate_a to be used as upper bound in base case FOR FLOW VARS
+
+[OBJECTIVE]
+    [OBJECTIVE.COST_COEFFS]
+        OVERLOAD                        = 10000
+        NUM_OVERLOAD                    = 0.0
+        REDISPATCH                      = 0.01
+        NUM_REDISPATCH                  = 0.0
+        GEN_SW                          = 0.0
+        BR_SW                           = 0.01
+        TR_SW                           = 0.01
+
+##############################################################
+########## Loss Estimation & Overload Calculation ############
+##############################################################
+[LOSS_ESTIMATION]
+    ESTIMATE_LOSSES                     = false                 # estimate losses in the network before applying the algorithm
+    METHOD                              = ":LP"                 # method to estimate losses {:LP, :MATPOWER}
+    MODEL                               = ":OPF"                # underlying formulation for loss estimation (in the LP case), deciding if contingencies are to be included in loss estimation, alternatives: :OPF, :SCOPF
+    POWER_MODEL                         = "ACRPowerModel"       # underlying power model for loss estimation (in the LP case), alternatives: SOCWRPowerModel, ACPPowerModel, SOCWRConicPowerModel, LPACCPowerModel, SDPWRMPowerModel, SparseSDPWRMPowerModel, ACRPowerModel, ACTPowerModel, QCLSPowerModel, QCRMPowerModel
+
+[PREPROCESSING]
+    REMOVE_LOOSE_ENDS                   = false                 # remove loose ends in the network for IEEE data
+    LOOSE_ENDS_ITERS                    = 3                     # number of iterations to remove loose ends
+
+[POSTPROCESSING]
+    [POSTPROCESSING.AC_FEAS]
+        CHECK                           = false                 # check whether a computed DC solution is AC feasible
+        METHOD                          = ":LP"                 # method to check AC feasibility {:LP, :MATPOWER} 
+        POWER_MODEL                     = "ACRPowerModel"       # underlying model for AC feasibility check (in the LP case), alternatives: SOCWRPowerModel, ACPPowerModel, SOCWRConicPowerModel, LPACCPowerModel, SDPWRMPowerModel, SparseSDPWRMPowerModel, ACRPowerModel, ACTPowerModel, QCLSPowerModel, QCRMPowerModel
+
+    [POSTPROCESSING.OVERLOADS]
+        EXPLICIT                        = false                 # calculate explicit CBCOs after Benders, relying on the non-zero eta values in the solution
+        EXPLICIT_INDIVIDUAL             = false                 # check individual branches for overloads using compact and Benders formulation by removing the branches from the data one by one
+
+    [POSTPROCESSING.CHECKS]
+        CHECK_WITH_COMPACT              = false                 # [DEBUG] check if the solution of the Benders run against the compact formulation
+        CHECK_WITH_COMPACT_TOL          = 0.1                   # [DEBUG] tolerance for objective function value to be different
+
+##############################################################
+############## Heuristics & Warmstarting #####################
+##############################################################
+[WARMSTARTING]
+    RESTRICTED_ONLY                     = false                 # return after the heuristic, without an unrestricted solve
+    ENABLED                             = false                 # warmstart the problem with a solution generated using WARMSTART_METHOD
+    SCOPF_TIME_LIMIT                    = 1800                  # solver time limit for SCOPF initialization
+    WARMSTART_METHOD                    = ":rscots"            # modes: :opf, :ots, :scopf, :rscots, :rscots2, :rscots3, :rscots_sequential
+    
+    # limit the number of switchable branches to be used when solving :rscots
+    [WARMSTARTING.RSCOTS]
+        STAGE_MODE                      = ":sequential" # :single solves only at the requested switching limit
+        MIP_GAP                         = 0.01
+        HELPER_MIP_GAP                  = -1.0          # negative inherits the configured main solver tolerance
+        HELPER_DISABLE_OBJECTIVE_STOP   = false
+        TAL                             = 1             # maximum number of switches to be used in the heuristic
+        TIME_LIMIT                      = 120           # time limit for solving the heuristic
+        STAGE_TIME_LIMIT                = 120           # intermediate stage cap for the staged hybrid helper; TIME_LIMIT is its total RSCOTS budget
+        SWITCHABLE_BRANCHES_LIMIT_MODE  = ":abs_score"    # limit the number of switchable branches to be used in the heuristic (:abs_num, :abs_score, :rel)
+        SW_BR_ABS_SCORE_LIM             = 0.05           # limit to the score of branches to still be used in the heuristic
+        N_SW_BR_ABS                     = 15            # number of switchable branches to be used in the heuristic (applied if SWITCHABLE_BRANCHES_LIMIT_MODE = :abs)
+        N_SW_BR_REL                     = 0.2           # fraction of switchable branches after sorting (applied if SWITCHABLE_BRANCHES_LIMIT_MODE = :rel)
+        N_SW_BR_FORCE                   = true
+        N_SW_BR_FORCE_MODE              = ":first"
+        CHECK_CONTINGENCIES             = false          # check contingencies in the warmstart solution
+        CHECK_CONTINGENCIES_RATEA_MULT  = 0.8           # factor of rate_a to be used for the warmstart run to check contingencies 
+        CARRY_FORWARD_CUTS              = false          # carry active Benders cuts from one RSCOTS stage to the next
+        CARRY_FORWARD_MODE              = ":accumulate"  # :accumulate (keep cuts from all stages) or :last (only last stage)
+        CARRY_FORWARD_ACTIVITY_TOL      = 0.01           # tolerance for considering a cut as active (slack <= tol)
+        BEST_OBJ_STOP_FRACTION          = 0.9            # terminate sequential RSCOTS once incumbent reaches this fraction of the previous warmstart objective (0.0 disables)
+
+        [WARMSTARTING.RSCOTS.WEIGHTS]
+            RND                        = 0.0                   # random
+            FULL                       = 1.0                   # score 1.0 for all
+            SENS                       = 0.0                   # Liu, 2012
+            CONGPROX                   = 0.0                   # congestion proximity
+            ADMITTANCE_SECANT          = 0.0                   # admittance sensitivity with self-transfer correction
+            ETA                        = 0.0                   # SP objective value
+
+        [WARMSTARTING.RSCOTS.HEUR]
+            INITIALLY_OPEN_FIRST             = false           # reserve candidate slots for initially open branches
+            CONGPROX_LOAD_LIMIT              = 0.8             # congprox: line loading to be considered congested
+            CONGPROX_N_HOPS                  = 3               # congprox: number of hops to be considered to be in proximity of the congestion
+            SENS_LOAD_LIMIT                  = 0.7             # sens:     line loading to be considered congested
+            SENS_N_MIN_CONGESTED_BRANCHES    = 5               # sens:     number of congested branches to be considered (nearly) overloaded
+
+# Note: heuristic solving requires warmstarting to be enabled
+[HEURISTIC_SOLVING]
+    ENABLED                             = false                 # heuristic solving of the switching problem
+    KEEP_WARMSTART_SWITCHABILITY        = true                 # keep the warmstarting switchability of branches in the heuristic solving
+
+    # Note: these parameters should allow for the same solution as the warmstarting parameters, otherwise, the warmstart will not be used
+    [HEURISTIC_SOLVING.RSCOTS]
+        SWITCHABLE_BRANCHES_LIMIT_MODE  = ":abs_num"           # limit the number of switchable branches to be used in the heuristic (:abs_num, :abs_score, :rel)
+        SW_BR_ABS_SCORE_LIM             = 0.1                  # limit to the score of branches to be used in the heuristic (absolute or relative)
+        N_SW_BR_ABS                     = 15                   # number of switchable branches to be used in the heuristic (applied if SWITCHABLE_BRANCHES_LIMIT_MODE = :abs)
+        N_SW_BR_REL                     = 0.2                  # fraction of switchable branches after sorting (applied if SWITCHABLE_BRANCHES_LIMIT_MODE = :rel)
+        N_SW_BR_FORCE                   = true
+        N_SW_BR_FORCE_MODE              = ":first"             
+
+        [HEURISTIC_SOLVING.RSCOTS.WEIGHTS]
+            RND                        = 0.0                   # random
+            FULL                       = 0.0                   # score 1.0 for all
+            SENS                       = 1.0                   # Liu, 2012
+            CONGPROX                   = 0.0                   # congestion proximity
+            ETA                        = 0.0                   # SP objective value
+
+        [HEURISTIC_SOLVING.RSCOTS.HEUR]
+            CONGPROX_LOAD_LIMIT              = 0.8             # congprox: line loading to be considered congested
+            CONGPROX_N_HOPS                  = 3               # congprox: number of hops to be considered to be in proximity of the congestion
+            SENS_LOAD_LIMIT                  = 0.7             # sens:     line loading to be considered congested
+            SENS_N_MIN_CONGESTED_BRANCHES    = 5               # sens:     number of congested branches to be considered (nearly) overloaded
+
+##############################################################
+############# Problem Extensions & Settings ##################
+##############################################################
+[SUBSTATION_RECONF]
+    BRANCH_RECONF                       = false                # can branches be reconnected to other busbars? NOTE: for IEEE, this requires COUPLER_RECONF
+    COUPLER_RECONF                      = false                # can substations be split and merged?
+
+[LIMITS]
+    [LIMITS.TRANSFORMER]
+        USE_TRAFOS                      = true                  # [debug] if false, reset shift and tap to 0/1 for all transformers in preprocessing
+        # maximum number of transformer shift change actions (TRansformer Actions Limit = TRAL)
+        TRANSFORMER_SHIFTING            = false
+        TRANSFORMER_DISCRETE            = false
+        TRAL_TIMESTEP                   = "Inf"                 # TRAL per timestep (i.e., number of transformers that can be changed in each timestep)
+        TRAL_COMPONENT_AND_TIMESTEP     = "Inf"                 # TRAL per component and timestep (i.e., operational gradient)
+        TRAL_DAY                        = "Inf"                 # TRAL per day
+        TRAL_COMPONENT_AND_DAY          = "Inf"                 # TRAL per component and day
+    
+    [LIMITS.REDISPATCH]
+        PG_DELTA_NUM_DAY                = "Inf"                 # maximum number of re-dispatches over the day
+
+    [LIMITS.GENERATOR]
+        REDISPATCH_MODEL                = false                 # if true, uses pg_0 (if existing), else pg from data as starting point. If false, always start from 0 dispatch regarding costs.
+        GEN_SWITCHING                   = false                  # can gens be switched off or on at all
+        GEN_REDISPATCH_OVERRIDE         = true                 # can gens always be redispatched within their redispatch limits, regardless of their status or pmin
+        GEN_REDISPATCH_OVERRIDE_DATA    = true                 # set pg_0+RDP+/pg_0-RDP- as pmax/pmin of gens, and set switchable=false
+        GEN_MIN_UP                      = 0                     # number of time steps a gen has to stay up after being shut down
+        GEN_MIN_DOWN                    = 0                     # number of time steps a gen has to stay down being started up
+        GEN_SHUTDOWN_NUM_DAY            = "Inf"                 # maximum number of shutdowns of generators over the day
+        GEN_STARTUP_NUM_DAY             = "Inf"                 # maximum number of startups of generators over the day
+
+    [LIMITS.BRANCH]
+        # maximum number of topological actions (Topological Actions Limit = TAL)
+        BRANCH_SWITCHING                = true                  # enable switching on or off branches
+        TAL_TIMESTEP                    = 1                     # TAL per timestep (e.g., 1 hour)
+        TAL_DAY                         = "Inf"                 # TAL per day (e.g., only switch that amount of components per day in total)
+        TAL_COMPONENT_AND_DAY           = "Inf"                 # TAL per component and day (e.g., only switch a component once a day)
+        REMAIN_SWITCHED_FOR             = 0                     # number of time steps that a switched component has to remain in the new status
+
+##############################################################
+######################### Benders ############################
+##############################################################
+
+[PRIMAL_HEURISTICS]
+    ENABLED                             = false                 # enable primal heuristics
+    HEURISTIC                           = ":SW_SCORE"           # heuristic to be used {:SW_SCORE, :ALL_FRAC}
+
+[CUTS]
+    NO_NEGATIVE_OBJ                     = false                 # if true, the objective function is constrained to be non-negative
+
+[BRANCHING]
+    BRANCHING_PRIORITY_MODE             = ":NONE"               # branching priority mode {:NONE, :SW_HEUR_PRIO}
+    MAX_NUM                             = 10                    # maximum number of candidates with higher priority
+    MAX_PCT                             = 0.1                   # maximum percentage of candidates with higher priority
+
+[BENDERS]
+    SUBPROBLEM_SOLVER_TYPE              = "LinEqSysRfSolver"    # Type of subproblem solver {LPSolver, LinEqSysSolver, FullLPSolver, LinEqSysRfSolver}
+    SUBPROBLEM_SOLVER_DUAL_SOLVE        = true                  # solve the dual subproblem to get Benders cut coefficients (only supported for optimality cuts for LinEqSysSolver)
+    SUBMIT_HEUR_SOLUTION                = false                 # should solutions that are better than the current primal but where a cut was added be submitted?
+    FIX_FORCED_ON_BRANCHES              = false                 # fix branches that are needed for connectedness to on
+    CONN_CUT_MIN_CUT                    = false                 # min cut connectedness cut
+    CONN_CUT_CAPACITATED                = false                 # capacitated connectedness cut
+    CONN_CUT_ALL_CONTINGENCIES          = false                 # add connectedness cuts for all violated contingencies
+
+    [BENDERS.PARTIAL_DECOMP]
+        ENABLED                         = false                 # universal gate for keeping any power flow in the master problem; if false, master is pure no-PF Benders
+        INCLUDE_BASE_PF                 = false                 # include the base-case power flow in master (replaces former BENDERS.BASE_PF_IN_MASTER; not supported in nested Benders)
+        MODE                            = ":OVERLOAD"           # mode to select contingencies to be left in the master problem {:SW_HEUR, :DIVERSITY, :RND, :OVERLOAD}; setting N_MAX_CONTINGENCIES = 0 and N_MAX_CONTINGENCIES_PCT = 0 keeps no contingency PFs in master
+        DISTANCE_METRIC                 = ":euclidean"           # distance metric for diversity calculation {:jaccard, :hamming, :cosine, :euclidean, :eqfreq_bin}
+        N_MAX_CONTINGENCIES             = 0                     # absolute cap on contingencies left in the master problem (used unless N_MAX_CONTINGENCIES_PCT > 0); 0 disables contingency PFs in master
+        N_MAX_CONTINGENCIES_PCT         = 0.0                   # if > 0, cap is ceil(PCT * n_relevant); overrides N_MAX_CONTINGENCIES; 0.0 disables
+        MIN_VIOLATION                   = 0                     # minimum violation (in cost units) of a contingency to be considered for inclusion in the master problem
+
+        [BENDERS.PARTIAL_DECOMP.WEIGHTS]
+            RND                        = 0.0                    # random
+            FULL                       = 0.0                    # score 1.0 for all
+            SENS                       = 0.0                    # Liu, 2012
+            CONGPROX                   = 0.0                    # congestion proximity
+            ETA                        = 1.0                    # SP objective value
+
+        [BENDERS.PARTIAL_DECOMP.HEUR]
+            CONGPROX_LOAD_LIMIT              = 0.8             # congprox: line loading to be considered congested
+            CONGPROX_N_HOPS                  = 3               # congprox: number of hops to be considered to be in proximity of the congestion
+            SENS_LOAD_LIMIT                  = 0.7             # sens:     line loading to be considered congested
+            SENS_N_MIN_CONGESTED_BRANCHES    = 5               # sens:     number of congested branches to be considered (nearly) overloaded
+
+    [BENDERS.IN_OUT_STRENGTHENING]
+        ENABLED                         = false                 # enable in-out strengthening
+        LAMBDA                          = 0.1                   # 1.0 = only use stable point, 0.0 = only use current solution
+        DELTA                           = 0.0002                # 1.0 = only use 1-point (all vars set to 1), 0.0 = only use lambda-weighted combination of current and stable point 
+        N_ITER_LIM                      = 200                   # number of iterations to run in-out strengthening
+        N_HITS_LIM                      = 200                   # number of cuts produced before stopping the iteration
+        ITER_TIME_LIM                   = 10.0                  # time limit for each iteration of in-out strengthening
+        STALL_PHASE_SWITCH_LIM          = 30                    # number of consecutive iterations without dual bound improvement before switching to the next phase
+
+    [BENDERS.CUTS]
+        FRACTIONAL_SEPA_NODELIM         = -2                    # number of nodes until which cuts on fractional solutions are generated (0 for root node only, -1 for no limit, -2 for disable)
+        FRACTIONAL_SEPA_ITERLIM         = 10                    # number of iterations until which cuts on fractional solutions are generated
+        CUT_STAB_ROUND_FREQ             = -1                    # frequency of stabilization rounds (all cuts are added, -1 for no stabilization, use multiples of STAB_ROUND_FREQ to obtain most cuts)
+
+        [BENDERS.CUTS.SELECTION]
+            ENABLED                     = true                  # enable cut selection
+            METHOD                      = ":VIOLATION"          # cut selection mode {:VIOLATION, :LODF_DIVERSITY, :VIOLATION_AGG, :DIVERSITY, :DIVERSITY_AGG, :DIVERSITY_AGG_HYB, :HYBRID, :RANDOM, :RANDOM_AGG}
+            FEASCUT_ONLY                = false                  # add all feasibility cuts and skip optimality cut selection when feasibility cuts exist
+            FEASCUT_INF_VIOL            = false                  # boost feasibility cut violations to Inf so they sort to top during normal selection
+            MIN_OPT_CUTS                = 0                      # minimum number of optimality cuts to include in the selection (0 to disable)
+            PLOT_HTML                   = ""                      # path for HTML plot of cut clusters (empty to disable)
+
+            [BENDERS.CUTS.SELECTION.VIOLATION]
+                LIMIT_MODE              = ":abs_num"            # limit mode {:abs_num, :rel_num, :rel_num_per_iter, :pb}
+                LIMIT_ABS_NUM           = 5                     # absolute number of cuts to be selected
+                LIMIT_REL_ALPHA         = 0.1                   # fraction of total subproblems to select (for :rel_num mode): ceil(alpha * n_subproblems)
+                LIMIT_REL_ITER_ALPHA    = 0.1                   # fraction of violated cuts per iteration (for :rel_num_per_iter mode): ceil(alpha * n_violated)
+                LIMIT_PB_RHO            = 1.0                   # gap fraction for :pb mode: add cuts until sum(violations) > rho * (z_UB - z_MP)
+            
+            [BENDERS.CUTS.SELECTION.LODF_DIVERSITY]
+                LIMIT_MODE              = ":abs_num"            # limit mode {:abs_num, :rel_num, :rel_num_per_iter, :pb}
+                LIMIT_ABS_NUM           = 5                     # absolute number of cuts to be selected
+                LIMIT_REL_ALPHA         = 0.1                   # fraction of total subproblems to select (for :rel_num mode): ceil(alpha * n_subproblems)
+                LIMIT_REL_ITER_ALPHA    = 0.1                   # fraction of violated cuts per iteration (for :rel_num_per_iter mode): ceil(alpha * n_violated)
+                LIMIT_PB_RHO            = 1.0                   # gap fraction for :pb mode: add cuts until sum(violations) > rho * (z_UB - z_MP)
+                
+            [BENDERS.CUTS.SELECTION.VIOLATION_AGG]
+                LIMIT_MODE              = ":abs_num"            # limit mode {:abs_num, :rel_num, :rel_num_per_iter, :pb}
+                LIMIT_ABS_NUM           = 5                     # absolute number of representative cuts to select
+                LIMIT_REL_ALPHA         = 0.1                   # fraction of total subproblems to select (for :rel_num mode)
+                LIMIT_REL_ITER_ALPHA    = 0.1                   # fraction of violated cuts per iteration (for :rel_num_per_iter mode)
+                LIMIT_PB_RHO            = 1.0                   # gap fraction for :pb mode
+                WEIGHTED_AGG            = false                  # weight cuts by violation before aggregating (feas cuts capped at max opt violation)
+                WEIGHTED_AGG_NORMALIZE  = false                  # normalize weights to sum to 1 (convex combination)
+
+            [BENDERS.CUTS.SELECTION.RANDOM]
+                NUM_CUTS                = 5                    # number of cuts to be selected randomly
+
+            [BENDERS.CUTS.SELECTION.RANDOM_AGG]
+                NUM_CUTS                = 5                    # number of representative cuts to select randomly
+                WEIGHTED_AGG            = false                  # weight cuts by violation before aggregating (feas cuts capped at max opt violation)
+                WEIGHTED_AGG_NORMALIZE  = false                  # normalize weights to sum to 1 (convex combination)
+
+
+            [BENDERS.CUTS.SELECTION.DIVERSITY]
+                USE_DBSCAN              = true                 # use DBSCAN clustering for diversity cut selection, if false, use KMeans
+                DISTANCE_METRIC         = ":jaccard"           # distance metric for diversity calculation {:jaccard, :hamming, :cosine, :euclidean, :eqfreq_bin}
+                DBSCAN_EPS              = 0.5                  # epsilon parameter for DBSCAN clustering
+                DBSCAN_MIN_PTS          = 5                    # minimum points parameter for DBSCAN clustering
+                NUM_CLUSTERS            = 5                    # number of clusters for KMeans clustering (if DBSCAN is not used)
+                NUM_CLUSTERS_MODE       = ":abs"               # cluster count mode {:abs, :rel}; :rel uses ceil(alpha * n_subproblems)
+                NUM_CLUSTERS_REL_ALPHA  = 0.05                 # fraction of total subproblems for :rel mode
+                EQFREQ_NUM_BINS         = 10                   # number of equal-frequency bins for :eqfreq_bin distance metric
+                REPRESENTATIVE_MODE     = ":max_violation"     # representative selection mode {:max_violation, :centroid}
+
+            [BENDERS.CUTS.SELECTION.HYBRID]
+                DISTANCE_METRIC         = ":jaccard"           # distance metric {:jaccard, :hamming, :cosine, :euclidean, :eqfreq_bin}
+                USE_DBSCAN              = false                # use DBSCAN instead of KMeans for clustering
+                DBSCAN_EPS              = 0.5                  # epsilon parameter for DBSCAN clustering
+                DBSCAN_MIN_PTS          = 5                    # minimum points parameter for DBSCAN clustering
+                NUM_CLUSTERS            = 5                    # number of k-means clusters (if DBSCAN is not used)
+                NUM_CLUSTERS_MODE       = ":abs"               # cluster count mode {:abs, :rel}; :rel uses ceil(alpha * n_subproblems)
+                NUM_CLUSTERS_REL_ALPHA  = 0.05                 # fraction of total subproblems for :rel mode
+                MIN_AFTER_FILTER        = 5                    # minimum cuts to retain after mean-violation filter
+                EQFREQ_NUM_BINS         = 10                   # number of equal-frequency bins for :eqfreq_bin distance metric
+                REPRESENTATIVE_MODE     = ":max_violation"     # representative selection mode {:max_violation, :centroid}
+
+            [BENDERS.CUTS.SELECTION.DIVERSITY_AGG]
+                USE_DBSCAN              = false                # use DBSCAN instead of KMeans for clustering
+                DISTANCE_METRIC         = ":cosine"            # distance metric {:jaccard, :hamming, :cosine, :euclidean, :eqfreq_bin}
+                DBSCAN_EPS              = 0.5                  # epsilon parameter for DBSCAN clustering
+                DBSCAN_MIN_PTS          = 5                    # minimum points parameter for DBSCAN clustering
+                NUM_CLUSTERS            = 5                    # number of k-means clusters (if DBSCAN is not used)
+                NUM_CLUSTERS_MODE       = ":abs"               # cluster count mode {:abs, :rel}; :rel uses ceil(alpha * n_subproblems)
+                NUM_CLUSTERS_REL_ALPHA  = 0.05                 # fraction of total subproblems for :rel mode
+                EQFREQ_NUM_BINS         = 10                   # number of equal-frequency bins for :eqfreq_bin distance metric
+                WEIGHTED_AGG            = false                  # weight cuts by violation before aggregating (feas cuts capped at max opt violation)
+                WEIGHTED_AGG_NORMALIZE  = false                  # normalize weights to sum to 1 (convex combination)
+
+            [BENDERS.CUTS.SELECTION.DIVERSITY_AGG_HYB]
+                USE_DBSCAN              = false                # use DBSCAN instead of KMeans for clustering
+                DISTANCE_METRIC         = ":cosine"            # distance metric {:jaccard, :hamming, :cosine, :euclidean, :eqfreq_bin}
+                DBSCAN_EPS              = 0.5                  # epsilon parameter for DBSCAN clustering
+                DBSCAN_MIN_PTS          = 5                    # minimum points parameter for DBSCAN clustering
+                NUM_CLUSTERS            = 5                    # number of k-means clusters (if DBSCAN is not used)
+                NUM_CLUSTERS_MODE       = ":abs"               # cluster count mode {:abs, :rel}; :rel uses ceil(alpha * n_subproblems)
+                NUM_CLUSTERS_REL_ALPHA  = 0.05                 # fraction of total subproblems for :rel mode
+                EQFREQ_NUM_BINS         = 10                   # number of equal-frequency bins for :eqfreq_bin distance metric
+                AGG_HYB_MODE            = ":k_plus_1"          # aggregation mode {:k_plus_1, :two_k}
+                REPRESENTATIVE_MODE     = ":max_violation"     # representative selection mode {:max_violation, :centroid}
+                WEIGHTED_AGG            = false                  # weight cuts by violation before aggregating (feas cuts capped at max opt violation)
+                WEIGHTED_AGG_NORMALIZE  = false                  # normalize weights to sum to 1 (convex combination)
+
+    [BENDERS.CUT_STRENGTHENING]
+        ENABLED                     = false                 # enable cut strengthening
+        METHOD                      = ":HISTORY"            # cut strengthening method {:HISTORY}
+        ROUND_INTS                  = false                 # round integer variables before calling the subproblem solver (required to use LEQ)
+
+        [BENDERS.CUT_STRENGTHENING.HISTORY]
+            POOL_SIZE               = 10                    # size of the cut pool to be used for strengthening
+            WEIGHTING_MODE         = ":EQUAL"               # weighting mode for cut strengthening {:EQUAL, :EXPONENTIAL}
+
+    [BENDERS.CHECKS]
+        CHECK_QUESTIONABLE_SOLS         = false                 # for MatrixSolvers, check if majority of the solution is equal, if so, run fallback
+        CHECK_WITH_FALLBACK             = false                 # check with fallback solver whether obj agrees (debug use only)
+        CHECK_WITH_IIS                  = false                 # check with IIS whenever a feasibility cut is obtained
+        CHECK_PF_WITH_FALLBACK          = false                 # check with fallback solver whether pf agrees (debug use only, requires CHECK_WITH_FALLBACK)
+        CHECK_COST_COMPONENTS           = false                 # [debug] show individual costs of overloads for subproblem
+        CHECK_CUT_VALUE                 = true                  # check the cut value of the generated optimality cuts against the subproblem objective function value
+        CHECK_FEAS_CUT_VALUE            = true                  # check the cut value of the generated feasibility cuts against the subproblem objective function value
+        CHECK_FALLBACK_ON_CUT_VAL_DISAG = false                 # use fallback solver solution for this problem if cut value check shows disagreement (only applicable if CHECK_CUT_VALUE is true)
+        CHECK_CUT_VALUE_TOL             = 0.0001                   # tolerance for cut value to be different from the objective function value of the subproblem
+        CHECK_SOL_ACCEPT_TOL            = 1.0                   # tolerance for solution to be accepted even if cuts were added (absolute violation)
+
+    # Benders limits for partial subproblem solving
+    [BENDERS.PARTIAL]
+        ENABLED                         = true                  # partial subproblem solving
+        SORTING_MODE                    = ":SCORE"              # sorting mode for subproblems {:SCORE, :RND}
+        SCORE_DECAY                     = 0.9                   # per-round decay factor in [0,1] for the running counters (n_calls, n_cuts_used, sum_violations)
+        ETA_ROBUSTNESS                  = 10.0                  # robustness parameter for cuts
+        ETA_ROBUSTNESS_FEAS             = 1.0                   # robustness parameter for feasibility cuts
+        STAB_ROUND_FREQ                 = "Inf"                 # frequency of stabilization rounds (all subproblems are solved, -1 for no stabilization)
+
+        [BENDERS.PARTIAL.LIMITS]
+            STOP_AFTER_TIME             = 10.0                  # time limit for solving the subproblem (in seconds)
+            STOP_AFTER_N_HITS           = "Inf"                 # number of hits before stopping
+            STOP_AFTER_N_HITS_REL       = 0.05                  # fraction of hits relative to total number of SPs before stopping
+            STOP_AFTER_N_MISSES         = "Inf"                 # number of misses before stopping (after at least one cut was generated)
+            STOP_AFTER_N_FEAS_CUTS      = 1                     # number of feasibility cuts before stopping
+            STOP_ON_PB                  = true                  # stop if the current primal bound is better than the master solution will be after adding these cuts
+            STOP_ON_PB_REL_BUFFER       = 0.1                   # stop if current master solution value * (1 - rel_tol) is worse than primal bound
+            MIN_PRIO                    = 0.0                   # minimum subproblem priority (after at least one cut was generated)
+
+        [BENDERS.PARTIAL.SCORE]
+            load                        = 0.09                  # weight for line loading in base case (obtained before entering each callback)
+            sw_score                    = 0.0                   # weight for branch switching relevance score (if warmstarting is enabled)
+            violation_per_cut           = 0.3                   # weight for the average violation per call (even if no cut was generated)
+            reliability                 = 0.3                   # weight for reliability score (n_cuts_used / n_calls)
+            total_share                 = 0.3                   # weight for share of cuts found by this subproblem in the total number of cuts found 
+            n_since_call                = 0.01                  # weight for number of calls since last call (i.e., each iteration where this subproblem was not called increases score by this weight)
+            random                      = 0.0                   # weight for a uniformly random component in [0,1] (re-sampled each round) to inject exploration
+            diversity                   = 0.0                   # weight for sensitivity based clustering, SPs from each cluster are randomly selected from that cluster in order
+
+        [BENDERS.PARTIAL.SCORE_DIV]
+            N_MEDOIDS               = 5                    # number of clusters
+            MEDOIDS_FIRST           = true                 # select the medoid of each cluster first
+            FULL_MEDOIDS            = false                 # iteratively perform kmedoids by removing previously computed ones to compute the full order
+            DISTANCE_METRIC         = ":cosine"            # distance metric {:jaccard, :hamming, :cosine, :euclidean, :eqfreq_bin}
+
+    [BENDERS.NESTED]
+        MP_PRIMAL_HEURISTICS            = true                 # activate solver primal heuristics for the MP (enabling them might sometimes lead to unnecessary cuts/incorrect solutions being accepted)
+
+        BASE_PF_IN_INTERMEDIATE         = false                 # have base power flow in intermediate problem (only applicable in nested)
+        NO_CHANGE_STOP                  = false                 # stop intermediate problem iterations after there has been no obj value change between two rounds
+        PRIMAL_BOUND_STOP               = true                  # stop intermediate problem iterations if its current objective function value is already larger than the MP primal bound, or our internal estimation
+        CUT_POOL_SIZE                   = 2000                  # at most how many benders cuts are kept in the intermediate problem after a complete round
+        SAME_SOL_THRESH                 = 3                     # number of approximately equally good IP solutions before we increase the optimality cut eta value tolerance
+
+        GENERATION_IN_MP                = false                 # include generation variables in master problem
+        ADD_IP_CUTS                     = true                  # include benders variables for ip cuts in master problem, and add the cuts once generated
+        ADD_SP_CUTS                     = false                 # include benders variables for sp cuts in master problem, and add the cuts once generated

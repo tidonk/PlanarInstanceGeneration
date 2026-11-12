@@ -1,0 +1,25 @@
+# Consolidate application results after every per-cohort evaluation batch.
+universe = vanilla
+experiment = $(experiment:full_shared4_300)
+dataset = $(dataset:pglib)
+batch_name = pig-$(experiment)-$(dataset)-application-summary
+priority = $(job_priority:0)
+
+executable = check/eval/application_summary.sh
+arguments = $(dataset) $(experiment)
+should_transfer_files = NO
+getenv = True
+
+fs_domain = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus = 1
+request_memory = 2048
+request_disk = 1048576
+
+output = check/eval/logs/$(experiment)/$(dataset)/application/summary.out
+error = check/eval/logs/$(experiment)/$(dataset)/application/summary.err
+log = check/eval/logs/$(experiment)/$(dataset)/application/summary.log
+
+on_exit_hold = (ExitCode =!= 0)
+queue 1

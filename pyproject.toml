@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planar-instance-generation"
+version = "0.1.0"
+description = "Reproducible generation and evaluation of merged planar network instances"
+readme = "README.md"
+license = {text = "GPL-3.0-or-later"}
+authors = [{name = "Tim Donkiewicz", email = "donkiewicz@or.rwth-aachen.de"}]
+requires-python = ">=3.11"
+dependencies = [
+    "networkx>=2.8.8,<4",
+    "numpy>=1.26,<3",
+    "scipy>=1.11,<2",
+]
+
+[project.urls]
+Repository = "https://github.com/tidonk/PlanarInstanceGeneration"
+
+[project.optional-dependencies]
+opf = []
+snd = ["gurobipy>=11,<14"]
+planarization = []
+evaluation = ["gurobipy>=11,<14"]
+docs = ["sphinx>=7,<9"]
+plots = ["matplotlib>=3.6,<4"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["planar_instance_generation*"]
+
+[tool.setuptools.package-data]
+planar_instance_generation = ["gates/*.jl"]

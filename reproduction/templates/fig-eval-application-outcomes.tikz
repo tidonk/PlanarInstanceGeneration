@@ -1,0 +1,19 @@
+% Shared legend and subplots for application outcomes.
+\begingroup
+\tikzset{
+  pig infeasible/.style={fill=white,postaction={pattern=dots,pattern color=#1}},
+  pig time limit/.style={fill=white,postaction={pattern=north east lines,pattern color=#1}},
+}
+\pgfplotslegendfromname{applicationoutcomelegend}\par\smallskip
+\begin{subfigure}[t]{0.485\linewidth}
+  \centering
+  \input{resources/evaluation/fig-eval-application-outcomes-scots.tikz}
+  \caption{SCOTS}
+\end{subfigure}
+\hfill
+\begin{subfigure}[t]{0.485\linewidth}
+  \centering
+  \input{resources/evaluation/fig-eval-application-outcomes-snd.tikz}
+  \caption{SND}
+\end{subfigure}
+\endgroup

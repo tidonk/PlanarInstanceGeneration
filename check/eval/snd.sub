@@ -1,0 +1,56 @@
+# HTCondor submit description for the SNDlib main generation experiment.
+#
+# Submit from the repository root on shared storage (see check/eval/README.md):
+#   python check/eval/make_jobs.py            # writes check/eval/snd.jobs
+#   condor_submit check/eval/snd.sub          # 100 paired instances x 5 methods
+#
+# Override the experiment tag or runtime guard on the command line, e.g.
+#   condor_submit experiment=pilot max_runtime=1800 check/eval/snd.sub
+
+universe    = vanilla
+# Self-referential default so a command-line `experiment=<tag>` still wins
+# (a plain `experiment = main` assignment would override the command line).
+experiment  = $(experiment:main)
+include : check/eval/batch_names.inc
+dataset     = snd
+
+sampling    = $(sampling:consecutive)
+# One batch per dataset so `condor_q -batch` groups the paired jobs cleanly.
+batch_name  = pig-$(batch_group)-$(dataset)-generation$(batch_variant)
+
+executable  = check/eval/job.sh
+arguments   = $(dataset) $(instance) $(seed) $(experiment) $(sampling) 0
+should_transfer_files = NO
+getenv      = True
+
+# The submit host advertises a different FileSystemDomain than the execute
+# nodes, but /home is shared NFS across the whole pool. Claim the pool's domain
+# so Condor's auto-added shared-filesystem match requirement is satisfied.
+# Override on another cluster with `condor_submit fs_domain=<domain> ...`.
+fs_domain   = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+request_cpus   = $(cpus:16)
+request_memory = 14336
+request_disk   = 2097152
+
+# Runtime guard: hold a job once it has been executing longer than the merging
+# time limit it was configured with, plus a margin for I/O and warm starts.
+# Tune max_runtime to match PIG_GENERATE_ARGS (exact_outer_face is the driver).
+max_runtime = $(max_runtime:43200)
+hold_margin = $(hold_margin:3600)
++MaxRuntime = $(max_runtime)
+periodic_hold = (JobStatus == 2) && (JobCurrentStartExecutingDate =!= UNDEFINED) && \
+                ((time() - JobCurrentStartExecutingDate) > ($(max_runtime) + $(hold_margin)))
+periodic_hold_reason    = strcat("runtime exceeded max_runtime (", "$(max_runtime)", "s) + hold_margin (", "$(hold_margin)", "s)")
+periodic_hold_subcode   = 1
+
+# A nonzero exit (e.g. an unmet request) leaves the job held for inspection
+# rather than silently vanishing.
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/$(experiment)/$(dataset)/i$(instance).out
+error  = check/eval/logs/$(experiment)/$(dataset)/i$(instance).err
+log    = check/eval/logs/$(experiment)/$(dataset)/cluster.log
+
+queue instance, seed from check/eval/snd.jobs

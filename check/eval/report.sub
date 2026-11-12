@@ -1,0 +1,54 @@
+# HTCondor submit description for the consolidation + review-report step.
+#
+# Runs once per dataset after its generation cluster has drained:
+#   condor_submit dataset=pglib experiment=main check/eval/report.sub
+#   condor_submit dataset=snd   experiment=main check/eval/report.sub
+#
+# main.dag wires this after the matching generation cluster automatically.
+
+universe    = vanilla
+# Self-referential defaults so command-line `experiment=` / `dataset=` win.
+experiment  = $(experiment:main)
+dataset     = $(dataset:pglib)
+
+batch_name  = pig-$(experiment)-$(dataset)-report
+priority    = $(job_priority:0)
+
+executable  = check/eval/report.sh
+data_only = $(data_only:0)
+arguments   = $(dataset) $(experiment) $(data_only)
+should_transfer_files = NO
+getenv = PATH, HOME, USER, LOGNAME, GUROBI_HOME, GRB_LICENSE_FILE, LD_LIBRARY_PATH, LANG, LC_ALL
+settings_file = $(settings_file:)
+environment = "PIG_SETTINGS_FILE=$(settings_file)"
+
+# The submit host advertises a different FileSystemDomain than the execute
+# nodes, but /home is shared NFS across the whole pool. Claim the pool's domain
+# so Condor's auto-added shared-filesystem match requirement is satisfied.
+# Override on another cluster with `condor_submit fs_domain=<domain> ...`.
+fs_domain   = $(fs_domain:clustor)
++FileSystemDomain = "$(fs_domain)"
+
+# The wrapper reuses completed planarization checkpoints. Future DAGs pass
+# --no-compile to produce evaluation data without the review PDF or galleries.
+report_cpus   = $(report_cpus:4)
+request_cpus  = $(report_cpus)
+request_memory = 14336
+report_disk   = $(report_disk:8388608)
+request_disk  = $(report_disk)
+
+max_runtime = $(max_runtime:604800)
+hold_margin = $(hold_margin:3600)
++MaxRuntime = $(max_runtime)
+periodic_hold = (JobStatus == 2) && (JobCurrentStartExecutingDate =!= UNDEFINED) && \
+                ((time() - JobCurrentStartExecutingDate) > ($(max_runtime) + $(hold_margin)))
+periodic_hold_reason  = strcat("report runtime exceeded max_runtime (", "$(max_runtime)", "s) + hold_margin (", "$(hold_margin)", "s)")
+periodic_hold_subcode = 1
+
+on_exit_hold = (ExitCode =!= 0)
+
+output = check/eval/logs/$(experiment)/$(dataset)/report.out
+error  = check/eval/logs/$(experiment)/$(dataset)/report.err
+log    = check/eval/logs/$(experiment)/$(dataset)/report.log
+
+queue

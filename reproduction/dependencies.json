@@ -1,0 +1,19 @@
+{
+  "TopologyOptimizer": {
+    "path": "third_party/TopologyOptimizer",
+    "url": "https://github.com/tidonk/TopologyOptimizer.jl.git",
+    "revision": "cadf8b63fe0a6b44c99646d9988e3df63b24c5f7",
+    "evaluation_revision": "f502511dd59ad30608f1e3a12a34324d44aab7ee"
+  },
+  "BendersNetworkDesign": {
+    "path": "third_party/BendersNetworkDesign",
+    "url": "https://github.com/tidonk/BendersNetworkDesign.jl.git",
+    "revision": "dbd9b4253a2a65eab1b1defa1e5029d4caf191d6",
+    "evaluation_revision": "45135498c12912c0563791fabf88b25ab8617e62"
+  },
+  "OGDF": {
+    "path": "third_party/ogdf",
+    "url": "https://github.com/ogdf/ogdf.git",
+    "revision": "5b6795655399b9d8e2921afec9d97bab9107d5ee"
+  }
+}

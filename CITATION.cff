@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite the accompanying paper when using this software."
+type: software
+version: 0.1.0
+title: "Planar Instance Generation"
+authors:
+  - family-names: Donkiewicz
+    given-names: Tim
+    orcid: "https://orcid.org/0000-0002-5721-3563"
+license: GPL-3.0-or-later
+repository-code: "https://github.com/tidonk/PlanarInstanceGeneration"
+preferred-citation:
+  type: unpublished
+  title: "Composition of Near-Planar Infrastructure Network Instances with Certified Skewness Bounds"
+  authors:
+    - family-names: Donkiewicz
+      given-names: Tim
+      orcid: "https://orcid.org/0000-0002-5721-3563"
+  year: 2026
+  # Add the arXiv identifier and URL here when assigned.

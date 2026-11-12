@@ -1,0 +1,124 @@
+#!/usr/bin/env python3
+"""Plot jointly exact added skewness from the paper's certified interval tables.
+
+Use the full manuscript tables so the plot shares the certified intervals
+reported in the supplement.
+Only inputs whose intervals collapse for every method enter the comparison.
+"""
+
+from __future__ import annotations
+
+import argparse
+from pathlib import Path
+import re
+
+
+METHODS = ("R", "HD", "KK", "OF-H", "OF-B")
+SHADES = (100, 80, 60, 40, 20, 5)
+
+
+def bucket_pattern(bucket: int, color: str) -> str:
+    if bucket == 0:
+        return r",postaction={pattern=north east lines,pattern color=white}"
+    if bucket == 5:
+        return f",postaction={{pattern=dots,pattern color={color}}}"
+    return ""
+
+
+def exact_values(path: Path) -> list[list[int]]:
+    rows = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("$i"):
+            continue
+        cells = line.split("&")
+        match = re.fullmatch(r"\$i(\d+)\$", cells[0].strip())
+        if match is None or len(cells) != 6:
+            raise ValueError(f"Malformed result row in {path}: {line}")
+        index = int(match[1])
+        if index in rows:
+            raise ValueError(f"Duplicate input {index} in {path}")
+        intervals = []
+        for cell in cells[1:]:
+            cell = cell.strip().removesuffix(r"\\").strip()
+            if cell.startswith(r"\textbf{") and cell.endswith("}"):
+                cell = cell[len(r"\textbf{"):-1]
+            if re.fullmatch(r"\d+", cell):
+                lo = hi = int(cell)
+            else:
+                interval = re.fullmatch(r"\[(\d+),\\,(\d+)\]", cell)
+                if interval is None:
+                    raise ValueError(f"Invalid interval {cell!r} in {path}")
+                lo, hi = map(int, interval.groups())
+            if lo > hi:
+                raise ValueError(f"Reversed interval in {path}: {cell}")
+            intervals.append((lo, hi))
+        rows[index] = intervals
+    if set(rows) != set(range(1, 101)):
+        raise ValueError(f"Expected inputs i001 through i100 in {path}")
+    exact = [[lo for lo, _ in rows[i]] for i in sorted(rows)
+             if all(lo == hi for lo, hi in rows[i])]
+    if not exact:
+        raise ValueError(f"No jointly exact inputs in {path}")
+    return exact
+
+
+def panel(domain: str, values: list[list[int]], legend: bool) -> str:
+    counts = [[sum(min(row[m], 5) == bucket for row in values)
+               for bucket in range(6)] for m in range(5)]
+    lines = [
+        r"\begin{subfigure}[t]{.485\linewidth}",
+        r"\centering",
+        r"\begin{tikzpicture}",
+        r"\begin{axis}[",
+        r"  xbar stacked,bar width=\pigBarWidth,",
+        r"  width=.96\linewidth,height=\pigMethodPlotHeight,",
+        r"  xmin=0,xmax=100,xtick={0,20,40,60,80,100},",
+        r"  xlabel={Inputs [\%]},",
+        r"  symbolic y coords={R,HD,KK,OF-H,OF-B},",
+        r"  ytick=data,y dir=reverse,enlarge y limits=.16,",
+        r"  axis lines*=left,axis line style={line width=.5pt},",
+        r"  tick label style={font=\scriptsize},label style={font=\scriptsize},",
+        r"  xmajorgrids=true,grid style={gray!18,line width=.3pt},",
+        r"  legend style={font=\scriptsize,legend columns=6,draw=none,",
+        r"    /tikz/every even column/.append style={column sep=2mm}},",
+    ]
+    if legend:
+        lines.append(r"  legend to name=exactskewnessshadelegend,")
+    lines.append("]")
+    if legend:
+        for bucket, shade in enumerate(SHADES):
+            pattern = bucket_pattern(bucket, "black")
+            lines.append(fr"\addlegendimage{{area legend,fill=black!{shade}!white,draw=black!55{pattern}}}")
+            label = str(bucket) if bucket < 5 else "5+"
+            lines.append(fr"\addlegendentry{{{label}}}")
+    for m in range(5):
+        for bucket, shade in enumerate(SHADES):
+            coords = " ".join(f"({100 * counts[m][bucket] / len(values) if j == m else 0:.9f},{method})"
+                              for j, method in enumerate(METHODS))
+            pattern = bucket_pattern(bucket, f"pigMethod{m}")
+            lines.append(fr"\addplot[fill=pigMethod{m}!{shade}!white,draw=pigMethod{m},line width=.25pt,forget plot{pattern}] coordinates {{{coords}}};")
+    lines.extend([r"\end{axis}", r"\end{tikzpicture}",
+                  fr"\caption{{{domain} ($N={len(values)}$)}}", r"\end{subfigure}"])
+    print(domain, "jointly exact:", len(values), "bucket counts:", dict(zip(METHODS, counts)))
+    return "\n".join(lines)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--paper-dir", required=True, type=Path)
+    args = parser.parse_args()
+    resources = args.paper_dir / "resources/evaluation"
+    panels = [panel(domain, exact_values(resources / f"tab-app-full-skewness-{key}.tex"), i == 0)
+              for i, (domain, key) in enumerate((("PGLib", "pglib"), ("SNDlib", "sndlib")))]
+    lines = ["% Generated by check/scripts/export_paper_skewness_distribution.py.",
+             "% Inputs: tab-app-full-skewness-{pglib,sndlib}.tex; jointly exact added skewness.",
+             r"\begingroup", r"\pigSetRowSpacing"]
+    lines.append(r"\pgfplotslegendfromname{exactskewnessshadelegend}\par\smallskip")
+    lines.extend([panels[0], r"\hfill", panels[1], r"\endgroup"])
+    output = resources / "fig-eval-exact-skewness-distribution.tikz"
+    output.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("Wrote", output)
+
+
+if __name__ == "__main__":
+    main()

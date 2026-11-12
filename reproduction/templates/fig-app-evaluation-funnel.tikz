@@ -1,0 +1,37 @@
+\begingroup
+\newcommand{\funnelflow}[6]{%
+  \draw[draw=#6, line width=#5, line cap=butt]
+    (#1,#2) .. controls +(0.85,0) and +(-0.85,0) .. (#3,#4);%
+}
+\newcommand{\funnelnosolution}[5]{%
+  \draw[draw=black,line width=#5,line cap=butt]
+    (#1,#2) .. controls +(0.85,0) and +(-0.85,0) .. (#3,#4);
+  \draw[draw=white,line width=\dimexpr#5-.5pt\relax,line cap=butt]
+    (#1,#2) .. controls +(0.85,0) and +(-0.85,0) .. (#3,#4);%
+}
+\newcommand{\funnelexpand}[2]{%
+  \draw[draw=black!72,line width=11pt,line cap=butt]
+    (4.00,#1) -- (5.40,#1);
+  \draw[draw=black!72,line width=30pt,line cap=butt]
+    (6.60,#1) -- (#2,#1);
+  % Inset the path by half the stroke width so its outer edges meet the bands.
+  \path[draw=black,fill=white,line width=.5pt,line join=round]
+    ([yshift=5.25pt]5.40,#1)
+    .. controls +(0.40,0) and +(-0.40,0) .. ([yshift=14.75pt]6.60,#1)
+    -- ([yshift=-14.75pt]6.60,#1)
+    .. controls +(-0.40,0) and +(0.40,0) .. ([yshift=-5.25pt]5.40,#1)
+    -- cycle;
+  \node at (6.05,#1) {\(\times 5\)};
+}
+\begin{subfigure}[t]{\linewidth}
+  \centering
+  \resizebox{\linewidth}{!}{\input{resources/evaluation/fig-app-evaluation-funnel-pglib.tikz}}
+  \caption{PGLib}
+\end{subfigure}
+\par\medskip
+\begin{subfigure}[t]{\linewidth}
+  \centering
+  \resizebox{\linewidth}{!}{\input{resources/evaluation/fig-app-evaluation-funnel-snd.tikz}}
+  \caption{SNDlib}
+\end{subfigure}
+\endgroup

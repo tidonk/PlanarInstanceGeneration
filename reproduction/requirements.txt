@@ -1,0 +1,6 @@
+# Versions used for the short reproduction test on 2026-11-05.
+numpy==1.26.1
+scipy==1.11.4
+networkx==3.6.1
+matplotlib==3.8.2
+gurobipy==13.0.3

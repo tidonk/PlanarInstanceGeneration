@@ -1,0 +1,9 @@
+[submodule "third_party/TopologyOptimizer"]
+	path = third_party/TopologyOptimizer
+	url = https://github.com/tidonk/TopologyOptimizer.jl.git
+[submodule "third_party/ogdf"]
+	path = third_party/ogdf
+	url = https://github.com/ogdf/ogdf.git
+[submodule "third_party/BendersNetworkDesign"]
+	path = third_party/BendersNetworkDesign
+	url = https://github.com/tidonk/BendersNetworkDesign.jl.git

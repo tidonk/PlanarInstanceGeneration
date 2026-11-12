@@ -1,0 +1,43 @@
+{
+  "generation": {
+    "pglib": "check/results/ogdf_20261104_pglib",
+    "snd": "check/results/ogdf_20261104_snd"
+  },
+  "paired": {
+    "pglib": "check/results/ogdf_20261104_pglib/evaluation/paired_strategy_outcomes.csv",
+    "snd": "check/results/ogdf_20261104_snd/evaluation/paired_strategy_outcomes.csv"
+  },
+  "applications": {
+    "scots": "check/results/ogdf_20261104_pglib_scopf/summary.csv",
+    "snd": "check/results/ogdf_20261104_snd_benders/summary.csv",
+    "scots_sources": "check/results/ogdf_20261106_pglib_source_scots/summary.csv",
+    "snd_sources": "check/results/snd_source_benders_10800/summary.csv",
+    "flows": "check/results/ogdf_20261104_pglib_scopf_tal0/summary.csv",
+    "include_scots_warmstart": true,
+    "flow_baseline": "check/results/ogdf_20261104_pglib_scopf_tal0/summary.csv"
+  },
+  "sources": {
+    "pglib": "check/results/ogdf_sources_20261106_pglib",
+    "voltage": "check/results/ogdf_sources_20261106_voltage",
+    "snd": "check/results/ogdf_sources_20261106_snd/skewness.csv"
+  },
+  "example": {
+    "run": "check/results/ogdf_20261104_pglib",
+    "input": 70
+  },
+  "supplement": {
+    "results": "check/results",
+    "sampling_baseline": "ogdf_20261104",
+    "sampling": "ogdf_sampling_20261106",
+    "normalization_baseline": "check/results/ogdf_20261104_pglib_scopf_tal0/summary.csv",
+    "normalization": "check/results/ogdf_20261104_normalized_pglib_scopf/summary.csv",
+    "normalization_audit": "check/results/ogdf_20261104_normalized_pglib_scopf/normalization_sensitivity.csv",
+    "snd_composites": "check/results/ogdf_20261104_snd_benders",
+    "snd_pieces": "check/results/ogdf_20261104_piece_comparison_snd_pieces_benders",
+    "sampling_baseline_application": "check/results/ogdf_20261104_pglib_scopf_tal0/summary.csv"
+  },
+  "flow_measurements": {
+    "scopf_summary": "check/results/ogdf_20261104_pglib_scopf_tal0/summary.csv",
+    "snd_results": "check/results/snd_flow_measurements/collected/results.json"
+  }
+}
